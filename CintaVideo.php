@@ -1,23 +1,21 @@
 <?php
 
 // IMPORTANTE: Incluimos la clase padre antes de heredar de ella (Contenido corregido por IA)
-include "Soporte.php";
+require_once "Soporte.php";
 
 class CintaVideo extends Soporte {
     // Atributos
     private $duracion;
 
     // Constructor
-    public function __construct($titulo, $numero, $precio, $duracion) {
-        // Llamamos al constructor del padre
-        parent::__construct($titulo, $numero, $precio);
+    public function __construct($titulo, $numero, $precio, $duracion) { 
+        parent::__construct($titulo, $numero, $precio); // Llamamos al constructor del padre
         $this->duracion = $duracion;
     }
 
-    // Método sobrescrito: muestraResumen()
+    // Métodos
     public function muestraResumen() {
-        // Primero mostramos lo del padre
-        parent::muestraResumen();
+        parent::muestraResumen(); // Primero mostramos lo del padre
         // Luego añadimos la duración
         echo "<strong>Duración:</strong> " . $this->duracion . " minutos<br>";
     }
