@@ -1,42 +1,43 @@
 <?php
 
-class Soporte {
+// Interfaz Resumible
+require_once "Resumible.php";
 
-    // Constantes
+abstract class Soporte implements Resumible
+{
+
+    // Constante 
     private static $IVA = 0.21;
 
-    // Atributos
+    // Atributos 
     public $titulo;
     protected $numero;
     private $precio;
-    
+
     // Constructor
-    public function __construct($titulo, $numero, $precio) {
+    public function __construct($titulo, $numero, $precio)
+    {
         $this->titulo = $titulo;
         $this->numero = $numero;
         $this->precio = $precio;
     }
 
     // Getters
-    public function getPrecio() {
+    public function getPrecio()
+    {
         return $this->precio;
     }
 
-    public function getPrecioConIva() {
+    public function getPrecioConIva()
+    {
         return $this->precio * (1 + self::$IVA);
     }
 
-    public function getNumero() {
+    public function getNumero()
+    {
         return $this->numero;
     }
 
-    public function muestraResumen() {
-        echo "<strong>Título:</strong> " . $this->titulo . "<br>";
-        echo "<strong>Número:</strong> " . $this->numero . "<br>";
-        echo "<strong>Precio sin IVA:</strong> " . $this->getPrecio() . " euros<br>";
-        echo "<strong>Precio con IVA:</strong> " . $this->getPrecioConIva() . " euros<br>";
-    }
-
+    // Este método debe ser implementado por cada clase hija
+    abstract public function muestraResumen();
 }
-
-?>
