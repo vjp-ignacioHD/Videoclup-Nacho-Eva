@@ -2,6 +2,9 @@
 
 namespace Dwes\ProyectoVideoclub;
 
+use Dwes\ProyectoVideoclub\SoporteYaAlquiladoException;
+use Dwes\ProyectoVideoclub\CupoSuperadoException;
+
 class Cliente
 {
     // ATRIBUTOS

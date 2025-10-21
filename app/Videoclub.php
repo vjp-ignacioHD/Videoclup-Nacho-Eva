@@ -2,6 +2,9 @@
 
 namespace Dwes\ProyectoVideoclub;
 
+use Dwes\ProyectoVideoclub\SoporteYaAlquiladoException;
+use Dwes\ProyectoVideoclub\CupoSuperadoException;
+
 // Esta clase representa el videoclub, que gestiona productos y clientes
 class Videoclub
 {
