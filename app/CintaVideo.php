@@ -2,9 +2,6 @@
 
 namespace Dwes\ProyectoVideoclub;
 
-// IMPORTANTE: Incluimos la clase padre antes de heredar de ella (Contenido corregido por IA)
-include_once "Soporte.php";
-
 class CintaVideo extends Soporte {
     // Atributos
     private $duracion;

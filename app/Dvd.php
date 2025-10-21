@@ -2,9 +2,6 @@
 
 namespace Dwes\ProyectoVideoclub;
 
-// Incluimos la clase padre para que funcione la herencia
-include_once "Soporte.php";
-
 class Dvd extends Soporte {
     // Atributos
     public $idiomas;

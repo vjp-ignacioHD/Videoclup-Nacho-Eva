@@ -2,9 +2,6 @@
 
 namespace Dwes\ProyectoVideoclub;
 
-// Incluimos la clase padre con require_once para evitar redefiniciones
-include_once "Soporte.php";
-
 class Juego extends Soporte {
     // Atributos
     public $consola;

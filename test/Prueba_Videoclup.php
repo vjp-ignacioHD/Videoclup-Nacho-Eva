@@ -1,6 +1,7 @@
 <?php
 
-require_once "Videoclub.php";
+// Incluimos el autoloader
+require_once "../autoload.php";
 
 // Usamos use para importar las clases que necesitamos
 use Dwes\ProyectoVideoclub\Videoclub;
