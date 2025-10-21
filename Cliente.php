@@ -1,7 +1,9 @@
 <?php
 
+namespace Dwes\ProyectoVideoclub;
+
 // Incluimos la clase padre con require_once para evitar redefiniciones
-require_once "Soporte.php";
+include_once "Soporte.php";
 
 class Cliente
 {

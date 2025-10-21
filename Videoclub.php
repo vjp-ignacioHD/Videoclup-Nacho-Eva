@@ -1,11 +1,13 @@
 <?php
 
+namespace Dwes\ProyectoVideoclub;
+
 // Incluyo las clases necesarias para que el videoclub funcione correctamente
-require_once "Cliente.php";
-require_once "Juego.php";
-require_once "Dvd.php";
-require_once "CintaVideo.php";
-require_once "Soporte.php";
+include_once "Cliente.php";
+include_once "Juego.php";
+include_once "Dvd.php";
+include_once "CintaVideo.php";
+include_once "Soporte.php";
 
 // Esta clase representa el videoclub, que gestiona productos y clientes
 class Videoclub

@@ -1,7 +1,9 @@
 <?php
 
+namespace Dwes\ProyectoVideoclub;
+
 // IMPORTANTE: Incluimos la clase padre antes de heredar de ella (Contenido corregido por IA)
-require_once "Soporte.php";
+include_once "Soporte.php";
 
 class CintaVideo extends Soporte {
     // Atributos

@@ -1,7 +1,9 @@
 <?php
 
+namespace Dwes\ProyectoVideoclub;
+
 // Interfaz Resumible
-require_once "Resumible.php";
+include_once "Resumible.php";
 
 abstract class Soporte implements Resumible
 {

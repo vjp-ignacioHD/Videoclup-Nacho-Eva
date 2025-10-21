@@ -2,6 +2,14 @@
 
 require_once "Videoclub.php";
 
+// Usamos use para importar las clases que necesitamos
+use Dwes\ProyectoVideoclub\Videoclub;
+use Dwes\ProyectoVideoclub\Cliente;
+use Dwes\ProyectoVideoclub\Juego;
+use Dwes\ProyectoVideoclub\Dvd;
+use Dwes\ProyectoVideoclub\CintaVideo;
+use Dwes\ProyectoVideoclub\Soporte;
+
 // Creamos el videoclub
 $videoclub = new Videoclub("CineClub Express");
 
