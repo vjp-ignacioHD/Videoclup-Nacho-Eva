@@ -32,9 +32,15 @@ class Juego extends Soporte {
     }
 
     // Metodo para mostrar el resumen
-    public function muestraResumen() {
-        parent::muestraResumen();
-        echo "<strong>Consola:</strong> " . $this->consola . "<br>";
+    public function muestraResumen(): void
+    {
+        // Mostramos los datos heredados manualmente
+        echo "Título: " . htmlspecialchars($this->titulo) . "<br>";
+        echo "Número: " . $this->numero . "<br>";
+        echo "Precio: " . number_format($this->getPrecio(), 2) . "€<br>";
+        
+        // Datos específicos del juego
+        echo "<strong>Consola:</strong> " . htmlspecialchars($this->consola) . "<br>";
         echo "<strong>Jugadores posibles:</strong> ";
         $this->muestraJugadoresPosibles();
         echo "<br>";

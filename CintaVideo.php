@@ -14,9 +14,14 @@ class CintaVideo extends Soporte {
     }
 
     // Métodos
-    public function muestraResumen() {
-        parent::muestraResumen(); // Primero mostramos lo del padre
-        // Luego añadimos la duración
+    public function muestraResumen(): void
+    {
+        // Mostramos manualmente los atributos heredados de Soporte
+        echo "Título: " . htmlspecialchars($this->titulo) . "<br>";
+        echo "Número: " . $this->numero . "<br>";
+        echo "Precio: " . number_format($this->getPrecio(), 2) . "€<br>";
+        
+        // Luego añadimos la información específica de la cinta
         echo "<strong>Duración:</strong> " . $this->duracion . " minutos<br>";
     }
 }

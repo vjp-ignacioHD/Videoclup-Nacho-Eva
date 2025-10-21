@@ -5,6 +5,7 @@ require_once "Cliente.php";
 require_once "Juego.php";
 require_once "Dvd.php";
 require_once "CintaVideo.php";
+require_once "Soporte.php";
 
 // Esta clase representa el videoclub, que gestiona productos y clientes
 class Videoclub
@@ -77,16 +78,19 @@ class Videoclub
     }
 
     // Este método permite que un socio alquile un producto por su número
-    public function alquilaSocioProducto(int $numSocio, int $numProducto): void
-    {
-        $cliente = $this->buscarSocio($numSocio);      // Busco el cliente por número
-        $producto = $this->buscarProducto($numProducto); // Busco el producto por número
+    public function alquilaSocioProducto(int $numSocio, int $numProducto): Videoclub // Cambia el tipo de retorno
+{
+    $cliente = $this->buscarSocio($numSocio);
+    $producto = $this->buscarProducto($numProducto);
 
-        // Si ambos existen, se realiza el alquiler
-        if ($cliente && $producto) {
-            $cliente->alquilar($producto);
-        }
+    if ($cliente && $producto) {
+        $cliente->alquilar($producto); // Aquí ya se imprime el resultado
+    } else {
+        echo "<br>Error: Socio o producto no encontrado.<br>";
     }
+
+    return $this; // Devuelve $this para encadenar
+}
 
     // Este método muestra todos los socios registrados y cuántos alquileres tienen
     public function listarSocios(): void
@@ -99,14 +103,14 @@ class Videoclub
     }
 
     // Este método busca un cliente por su número de socio
-    private function buscarSocio(int $numeroSocio): ?Cliente
+    public function buscarSocio(int $numeroSocio): ?Cliente
     {
         foreach ($this->socios as $cliente) {
             if ($cliente->getNumero() === $numeroSocio) {
                 return $cliente;
             }
         }
-        return null; // Si no se encuentra, devuelve null
+        return null;
     }
 
     // Este método busca un producto por su número
@@ -120,3 +124,4 @@ class Videoclub
         return null; // Si no se encuentra, devuelve null
     }
 }
+

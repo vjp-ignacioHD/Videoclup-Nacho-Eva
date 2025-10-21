@@ -16,11 +16,16 @@ class Dvd extends Soporte {
     }
 
     // Métodos
-    public function muestraResumen() {
-        parent::muestraResumen(); // Primero mostramos lo del padre     
-        // Luego añadimos los nuevos datos
-        echo "<strong>Idiomas:</strong> " . $this->idiomas . "<br>";
-        echo "<strong>Formato de pantalla:</strong> " . $this->formatoPantalla . "<br>";
+    public function muestraResumen(): void
+    {
+        // Mostramos los datos heredados manualmente
+        echo "Título: " . htmlspecialchars($this->titulo) . "<br>";
+        echo "Número: " . $this->numero . "<br>";
+        echo "Precio: " . number_format($this->getPrecio(), 2) . "€<br>";
+        
+        // Datos específicos del DVD
+        echo "<strong>Idiomas:</strong> " . htmlspecialchars($this->idiomas) . "<br>";
+        echo "<strong>Formato de pantalla:</strong> " . htmlspecialchars($this->formatoPantalla) . "<br>";
     }
 }
 

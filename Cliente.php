@@ -53,52 +53,44 @@ class Cliente
         return false;
     }
 
-    public function alquilar(Soporte $s): bool
-    {
-        if ($this->tieneAlquilado($s)) {
-            echo "<br>El cliente ya tiene alquilado el soporte " . $s->titulo . "<br>";
-            return false;
-        }
-
-        if ($this->numSoportesAlquilados >= $this->maxAlquilerConcurrente) {
-            echo "<br>Este cliente tiene " . $this->maxAlquilerConcurrente . " elementos alquilados. No puede alquilar más en este videoclub hasta que no devuelva algo<br>";
-            return false;
-        }
-
-        $this->soportesAlquilados[] = $s;
-        $this->numSoportesAlquilados++;
-
-        echo "<br>Alquilado soporte a: " . $this->nombre . "<br>";
-        $s->muestraResumen(); // ← Aquí se muestra la información del soporte
-
-        return true;
+    public function alquilar(Soporte $s): Cliente // Cambia el tipo de retorno a Cliente
+{
+    if ($this->tieneAlquilado($s)) {
+        echo "<br>El cliente ya tiene alquilado el soporte " . $s->titulo . "<br>";
+        return $this; // Devuelve $this para encadenar
     }
+
+    if ($this->numSoportesAlquilados >= $this->maxAlquilerConcurrente) {
+        echo "<br>Este cliente tiene " . $this->maxAlquilerConcurrente . " elementos alquilados. No puede alquilar más en este videoclub hasta que no devuelva algo<br>";
+        return $this; // Devuelve $this para encadenar
+    }
+
+    $this->soportesAlquilados[] = $s;
+    $this->numSoportesAlquilados++;
+
+    echo "<br>Alquilado soporte a: " . $this->nombre . "<br>";
+    $s->muestraResumen();
+
+    return $this; // Devuelve $this
+}
 
     // Este método permite devolver un soporte alquilado por su número
-    public function devolver(int $numSoporte): bool
-    {
-        // Recorremos el array de soportes alquilados
-        foreach ($this->soportesAlquilados as $indice => $soporte) {
-            // Si encontramos el soporte con el número indicado
-            if ($soporte->getNumero() == $numSoporte) {
-                // Lo eliminamos del array
-                unset($this->soportesAlquilados[$indice]);
+    public function devolver(int $numSoporte): Cliente // Cambia el tipo de retorno a Cliente
+{
+    foreach ($this->soportesAlquilados as $indice => $soporte) {
+        if ($soporte->getNumero() == $numSoporte) {
+            unset($this->soportesAlquilados[$indice]);
+            $this->soportesAlquilados = array_values($this->soportesAlquilados);
+            $this->numSoportesAlquilados--;
 
-                // Reindexamos el array para que no haya huecos
-                $this->soportesAlquilados = array_values($this->soportesAlquilados);
-
-                // Restamos 1 al contador de alquileres
-                $this->numSoportesAlquilados--;
-
-                echo "<br>" . $this->nombre . " ha devuelto correctamente el soporte: " . $soporte->titulo . "<br>";
-                return true;
-            }
+            echo "<br>" . $this->nombre . " ha devuelto correctamente el soporte: " . $soporte->titulo . "<br>";
+            return $this; // Devuelve $this
         }
-
-        // Si no se encuentra el soporte en la lista de alquileres
-        echo "<br>" . $this->nombre . " no tiene alquilado el soporte con número: " . $numSoporte . "<br>";
-        return false;
     }
+
+    echo "<br>" . $this->nombre . " no tiene alquilado el soporte con número: " . $numSoporte . "<br>";
+    return $this; // Devuelve $this incluso si falla
+}
 
     // Este método muestra la lista de alquileres actuales del cliente
     public function listarAlquileres(): void
