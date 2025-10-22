@@ -1,9 +1,11 @@
 <?php
 
+// Declaramos el namespace para esta clase Cliente
 namespace Dwes\ProyectoVideoclub;
 
-use Dwes\ProyectoVideoclub\SoporteYaAlquiladoException;
-use Dwes\ProyectoVideoclub\CupoSuperadoException;
+// Importamos las excepciones específicas que lanzará esta clase
+use Dwes\ProyectoVideoclub\Util\SoporteYaAlquiladoException;
+use Dwes\ProyectoVideoclub\Util\CupoSuperadoException;
 
 class Cliente
 {
@@ -55,16 +57,14 @@ class Cliente
         return false;
     }
 
-    public function alquilar(Soporte $s): Cliente // Cambia el tipo de retorno a Cliente
+    public function alquilar(Soporte $s): Cliente
 {
     if ($this->tieneAlquilado($s)) {
-        echo "<br>El cliente ya tiene alquilado el soporte " . $s->titulo . "<br>";
-        return $this; // Devuelve $this para encadenar
+        throw new SoporteYaAlquiladoException("El cliente ya tiene alquilado el soporte: " . $s->titulo);
     }
 
     if ($this->numSoportesAlquilados >= $this->maxAlquilerConcurrente) {
-        echo "<br>Este cliente tiene " . $this->maxAlquilerConcurrente . " elementos alquilados. No puede alquilar más en este videoclub hasta que no devuelva algo<br>";
-        return $this; // Devuelve $this para encadenar
+        throw new CupoSuperadoException("Este cliente tiene " . $this->maxAlquilerConcurrente . " elementos alquilados. No puede alquilar más");
     }
 
     $this->soportesAlquilados[] = $s;
@@ -73,11 +73,11 @@ class Cliente
     echo "<br>Alquilado soporte a: " . $this->nombre . "<br>";
     $s->muestraResumen();
 
-    return $this; // Devuelve $this
+    return $this;
 }
 
     // Este método permite devolver un soporte alquilado por su número
-    public function devolver(int $numSoporte): Cliente // Cambia el tipo de retorno a Cliente
+    public function devolver(int $numSoporte): Cliente
 {
     foreach ($this->soportesAlquilados as $indice => $soporte) {
         if ($soporte->getNumero() == $numSoporte) {

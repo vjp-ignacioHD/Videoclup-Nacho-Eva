@@ -1,9 +1,13 @@
 <?php
 
+// Declaramos el namespace para esta clase
 namespace Dwes\ProyectoVideoclub;
 
-use Dwes\ProyectoVideoclub\SoporteYaAlquiladoException;
-use Dwes\ProyectoVideoclub\CupoSuperadoException;
+// Importamos las excepciones personalizadas que usará esta clase
+use Dwes\ProyectoVideoclub\Util\ClienteNoEncontradoException;
+use Dwes\ProyectoVideoclub\Util\SoporteNoEncontradoException;
+use Dwes\ProyectoVideoclub\Util\SoporteYaAlquiladoException;
+use Dwes\ProyectoVideoclub\Util\CupoSuperadoException;
 
 // Esta clase representa el videoclub, que gestiona productos y clientes
 class Videoclub
@@ -76,19 +80,35 @@ class Videoclub
     }
 
     // Este método permite que un socio alquile un producto por su número
-    public function alquilaSocioProducto(int $numSocio, int $numProducto): Videoclub // Cambia el tipo de retorno
-{
-    $cliente = $this->buscarSocio($numSocio);
-    $producto = $this->buscarProducto($numProducto);
+    public function alquilaSocioProducto(int $numSocio, int $numProducto): Videoclub
+    {
+        try {
+            $cliente = $this->buscarSocio($numSocio);
+            $producto = $this->buscarProducto($numProducto);
 
-    if ($cliente && $producto) {
-        $cliente->alquilar($producto); // Aquí ya se imprime el resultado
-    } else {
-        echo "<br>Error: Socio o producto no encontrado.<br>";
+            if (!$cliente) {
+                throw new ClienteNoEncontradoException("Socio con número $numSocio no encontrado");
+            }
+
+            if (!$producto) {
+                throw new SoporteNoEncontradoException("Producto con número $numProducto no encontrado");
+            }
+
+            // Esta llamada puede lanzar SoporteYaAlquiladoException o CupoSuperadoException
+            $cliente->alquilar($producto);
+        } catch (SoporteYaAlquiladoException $e) {
+            echo "<br><strong>Error en alquiler:</strong> " . $e->getMessage() . "<br>";
+        } catch (CupoSuperadoException $e) {
+            echo "<br><strong>Error en alquiler:</strong> " . $e->getMessage() . "<br>";
+        } catch (ClienteNoEncontradoException $e) {
+            echo "<br><strong>Error en alquiler:</strong> " . $e->getMessage() . "<br>";
+        } catch (SoporteNoEncontradoException $e) {
+            echo "<br><strong>Error en alquiler:</strong> " . $e->getMessage() . "<br>";
+        }
+
+        return $this;
     }
 
-    return $this; // Devuelve $this para encadenar
-}
 
     // Este método muestra todos los socios registrados y cuántos alquileres tienen
     public function listarSocios(): void
@@ -122,4 +142,3 @@ class Videoclub
         return null; // Si no se encuentra, devuelve null
     }
 }
-
