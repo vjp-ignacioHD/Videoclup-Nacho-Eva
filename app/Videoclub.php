@@ -17,11 +17,24 @@ class Videoclub
     private array $socios = [];           // Array donde se guardan todos los clientes registrados
     private int $numProductos = 0;
     private int $numSocios = 0;
+    private int $numProductosAlquilados = 0;
+    private int $numTotalAlquileres = 0;
 
     // CONSTRUCTOR
     public function __construct(string $nombre)
     {
         $this->nombre = $nombre;
+    }
+
+    // Getters
+    public function getNumProductosAlquilados(): int
+    {
+        return $this->numProductosAlquilados;
+    }
+
+    public function getNumTotalAlquileres(): int
+    {
+        return $this->numTotalAlquileres;
     }
 
     // Este método crea un objeto Juego y lo añade al videoclub
@@ -60,6 +73,7 @@ class Videoclub
         foreach ($this->productos as $indice => $producto) {
             echo ($indice + 1) . ".- ";
             $producto->muestraResumen(); // Cada soporte muestra su información específica
+            echo "<strong>Estado:</strong> " . ($producto->getAlquilado() ? "ALQUILADO" : "DISPONIBLE") . "<br>";
             echo "<br>";
         }
     }
@@ -96,6 +110,9 @@ class Videoclub
 
             // Esta llamada puede lanzar SoporteYaAlquiladoException o CupoSuperadoException
             $cliente->alquilar($producto);
+
+            $this->numProductosAlquilados++;
+            $this->numTotalAlquileres++;
         } catch (SoporteYaAlquiladoException $e) {
             echo "<br><strong>Error en alquiler:</strong> " . $e->getMessage() . "<br>";
         } catch (CupoSuperadoException $e) {
@@ -109,6 +126,21 @@ class Videoclub
         return $this;
     }
 
+    // Muestra estadísticas del videoclub
+    public function mostrarEstadisticas(): void
+    {
+        echo "<br><strong>📊 Estadísticas del Videoclub \"{$this->nombre}\":</strong><br>";
+        echo "Total de productos: " . $this->numProductos . "<br>";
+        echo "Productos actualmente alquilados: " . $this->numProductosAlquilados . "<br>";
+        echo "Total de alquileres realizados: " . $this->numTotalAlquileres . "<br>";
+        echo "Socios registrados: " . $this->numSocios . "<br>";
+
+        // Calcular porcentaje de productos alquilados
+        if ($this->numProductos > 0) {
+            $porcentajeAlquilados = ($this->numProductosAlquilados / $this->numProductos) * 100;
+            echo "Porcentaje de productos alquilados: " . number_format($porcentajeAlquilados, 2) . "%<br>";
+        }
+    }
 
     // Este método muestra todos los socios registrados y cuántos alquileres tienen
     public function listarSocios(): void

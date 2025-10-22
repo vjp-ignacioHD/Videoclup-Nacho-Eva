@@ -12,6 +12,7 @@ abstract class Soporte implements Resumible
     public $titulo;
     protected $numero;
     private $precio;
+    public $alquilado;
 
     // Constructor
     public function __construct($titulo, $numero, $precio)
@@ -19,6 +20,7 @@ abstract class Soporte implements Resumible
         $this->titulo = $titulo;
         $this->numero = $numero;
         $this->precio = $precio;
+        $this->alquilado = false; // Inicialmente no está alquilado
     }
 
     // Getters
@@ -35,6 +37,17 @@ abstract class Soporte implements Resumible
     public function getNumero()
     {
         return $this->numero;
+    }
+
+    public function getAlquilado(): bool
+    {
+        return $this->alquilado;
+    }
+
+    // Setter
+    public function setAlquilado(bool $estado): void
+    {
+        $this->alquilado = $estado;
     }
 
     // Este método debe ser implementado por cada clase hija

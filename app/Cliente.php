@@ -69,6 +69,9 @@ class Cliente
 
     $this->soportesAlquilados[] = $s;
     $this->numSoportesAlquilados++;
+    
+    // NUEVO: Marcar el soporte como alquilado
+    $s->setAlquilado(true);
 
     echo "<br>Alquilado soporte a: " . $this->nombre . "<br>";
     $s->muestraResumen();
@@ -85,13 +88,16 @@ class Cliente
             $this->soportesAlquilados = array_values($this->soportesAlquilados);
             $this->numSoportesAlquilados--;
 
+            // NUEVO: Marcar el soporte como no alquilado
+            $soporte->setAlquilado(false);
+
             echo "<br>" . $this->nombre . " ha devuelto correctamente el soporte: " . $soporte->titulo . "<br>";
-            return $this; // Devuelve $this
+            return $this;
         }
     }
 
     echo "<br>" . $this->nombre . " no tiene alquilado el soporte con número: " . $numSoporte . "<br>";
-    return $this; // Devuelve $this incluso si falla
+    return $this;
 }
 
     // Este método muestra la lista de alquileres actuales del cliente
