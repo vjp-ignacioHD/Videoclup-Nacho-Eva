@@ -8,6 +8,7 @@ use Dwes\ProyectoVideoclub\Util\ClienteNoEncontradoException;
 use Dwes\ProyectoVideoclub\Util\SoporteNoEncontradoException;
 use Dwes\ProyectoVideoclub\Util\SoporteYaAlquiladoException;
 use Dwes\ProyectoVideoclub\Util\CupoSuperadoException;
+use Dwes\ProyectoVideoclub\Util\VideoclubException;
 
 // Esta clase representa el videoclub, que gestiona productos y clientes
 class Videoclub
@@ -93,6 +94,8 @@ class Videoclub
         $this->numSocios++;
     }
 
+    // En este método he consultado un poco la IA
+
     // Este método permite que un socio alquile un producto por su número
     public function alquilaSocioProducto(int $numSocio, int $numProducto): Videoclub
     {
@@ -126,10 +129,70 @@ class Videoclub
         return $this;
     }
 
+    // Método que permite alquilar múltiples productos a un socio en una sola operación
+    public function alquilarSocioProductos(int $numSocio, array $numerosProductos): Videoclub
+{
+    try {
+        // Buscar el cliente en el sistema
+        $cliente = $this->buscarSocio($numSocio);
+        
+        // Verificar que el cliente existe
+        if (!$cliente) {
+            throw new ClienteNoEncontradoException("Socio con número $numSocio no encontrado");
+        }
+
+        // Comprobamos que todos los productos están disponibles
+        $productosAAlquilar = [];
+        foreach ($numerosProductos as $numProducto) {
+            // Buscar el producto en el inventario
+            $producto = $this->buscarProducto($numProducto);
+            
+            // Verificar que el producto existe
+            if (!$producto) {
+                throw new SoporteNoEncontradoException("Producto con número $numProducto no encontrado");
+            }
+            
+            // Verificar que el producto no está ya alquilado
+            if ($producto->getAlquilado()) {
+                throw new SoporteYaAlquiladoException("El producto '{$producto->titulo}' (Nº $numProducto) ya está alquilado");
+            }
+            
+            // Verificamos que el cliente tiene cupo suficiente para todos los productos solicitados
+            if (($cliente->getNumSoportesAlquilados() + count($numerosProductos)) > 2) {
+                throw new CupoSuperadoException("El cliente no puede alquilar " . count($numerosProductos) . " productos. Superaría su cupo máximo de 2");
+            }
+            
+            // Si pasa todas las verificaciones, añadir a la lista de productos a alquilar
+            $productosAAlquilar[] = $producto;
+        }
+
+        // Si todos los productos están disponibles, procedemos con el alquiler de todos los productos
+        foreach ($productosAAlquilar as $producto) {
+            // Realizar el alquiler individual de cada producto
+            $cliente->alquilar($producto);
+            
+            // Actualizar estadísticas del videoclub
+            $this->numProductosAlquilados++;    // Incrementar contador de productos alquilados actualmente
+            $this->numTotalAlquileres++;        // Incrementar contador histórico de alquileres
+        }
+        
+        // Confirmación de éxito
+        echo "<br><strong>✅ Alquiler múltiple completado:</strong> " . count($numerosProductos) . " productos alquilados a {$cliente->nombre}<br>";
+        
+    } catch (VideoclubException $e) {
+        // Si ocurre cualquier error durante la verificación o ejecución, se cancela toda la operación
+        echo "<br><strong>Error en alquiler múltiple:</strong> " . $e->getMessage() . "<br>";
+        echo "<em>Ningún producto ha sido alquilado debido al error.</em><br>";
+    }
+
+    // Retornar $this para permitir encadenamiento de métodos
+    return $this;
+}
+
     // Muestra estadísticas del videoclub
     public function mostrarEstadisticas(): void
     {
-        echo "<br><strong>📊 Estadísticas del Videoclub \"{$this->nombre}\":</strong><br>";
+        echo "<br><strong> Estadísticas del Videoclub \"{$this->nombre}\":</strong><br>";
         echo "Total de productos: " . $this->numProductos . "<br>";
         echo "Productos actualmente alquilados: " . $this->numProductosAlquilados . "<br>";
         echo "Total de alquileres realizados: " . $this->numTotalAlquileres . "<br>";
