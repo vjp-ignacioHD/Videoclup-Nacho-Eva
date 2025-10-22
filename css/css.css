@@ -1,0 +1,192 @@
+/*
+  videoclub-bootstrap.css
+  - Importa Bootstrap (CDN) y añade estilos personalizados para la app "CineClub Express".
+  - Guardar este archivo y enlazarlo en tus vistas (por ejemplo: <link rel="stylesheet" href="/css/videoclub-bootstrap.css">)
+  - Alternativa: si prefieres no usar @import, quita la línea @import y enlaza Bootstrap desde el HTML con <link> al CDN.
+*/
+
+/* --- Importar Bootstrap desde CDN (mantenlo opcional) --- */
+@import url('https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css');
+
+:root{
+  --vc-primary: #0d6efd;    /* color principal (bootstrap primary por defecto) */
+  --vc-accent: #6610f2;     /* acento morado para destacar */
+  --vc-bg: #f8f9fa;         /* fondo general */
+  --vc-card: #ffffff;       /* fondo tarjetas */
+  --vc-muted: #6c757d;      /* texto secundario */
+  --vc-radius: .75rem;      /* radio de bordes consistente */
+}
+
+/* Reset visual ligero */
+html,body{
+  height:100%;
+}
+body{
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: linear-gradient(180deg, var(--vc-bg) 0%, #ffffff 100%);
+  color: #212529;
+  padding: 1.5rem;
+}
+
+/* Cabecera del videoclub */
+.vc-header{
+  background: linear-gradient(90deg, rgba(13,110,253,0.10), rgba(102,16,242,0.06));
+  border: 1px solid rgba(13,110,253,0.06);
+  padding: 1rem 1.25rem;
+  border-radius: var(--vc-radius);
+  display:flex;
+  align-items:center;
+  gap:1rem;
+  margin-bottom:1.25rem;
+}
+.vc-header h1{
+  margin:0;
+  font-size:1.25rem;
+  font-weight:600;
+  color:var(--vc-primary);
+}
+.vc-header .vc-subtitle{
+  color:var(--vc-muted);
+  font-size:.95rem;
+}
+
+/* Contenedor principal */
+.vc-container{
+  max-width:1100px;
+  margin:0 auto;
+}
+
+/* Tarjetas de producto */
+.vc-product-card{
+  background: var(--vc-card);
+  border-radius: .9rem;
+  box-shadow: 0 6px 18px rgba(16,24,40,0.04);
+  padding: .85rem;
+  display:flex;
+  gap: .75rem;
+  align-items:center;
+  border: 1px solid rgba(10,10,10,0.03);
+}
+.vc-product-thumb{
+  width:72px;
+  height:72px;
+  border-radius: .5rem;
+  background: linear-gradient(180deg, rgba(0,0,0,0.04), rgba(0,0,0,0.02));
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:600;
+  color: #fff;
+}
+.vc-product-info{
+  flex:1;
+}
+.vc-product-title{
+  margin:0;
+  font-weight:600;
+  font-size:1rem;
+}
+.vc-product-meta{
+  color:var(--vc-muted);
+  font-size:.875rem;
+}
+
+/* Estado (disponible / alquilado) */
+.vc-badge-available{
+  background: rgba(40,167,69,0.12);
+  color: #28a745;
+  padding: .25rem .45rem;
+  border-radius: .5rem;
+  font-size: .8rem;
+  font-weight:600;
+}
+.vc-badge-rented{
+  background: rgba(220,53,69,0.08);
+  color: #dc3545;
+  padding: .25rem .45rem;
+  border-radius: .5rem;
+  font-size: .8rem;
+  font-weight:600;
+}
+
+/* Botones personalizados que usan utilidades de bootstrap */
+.btn-rent{
+  border-radius: .6rem;
+  padding: .4rem .7rem;
+  box-shadow: 0 2px 6px rgba(13,110,253,0.08);
+}
+.btn-return{
+  border-radius: .6rem;
+  padding: .38rem .68rem;
+}
+
+/* Listado de socios */
+.vc-socios-table tbody tr td{
+  vertical-align: middle;
+}
+.vc-socios-table .avatar{
+  width:38px;
+  height:38px;
+  border-radius:50%;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:700;
+  color:#fff;
+  background: linear-gradient(45deg, var(--vc-primary), var(--vc-accent));
+}
+
+/* Formularios compactos */
+.vc-form-compact .form-control{
+  border-radius: .5rem;
+}
+
+/* Grid de productos con tarjetas */
+.vc-products-grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+/* Mensaje cuando no hay elementos */
+.vc-empty{
+  text-align:center;
+  padding:2rem 1rem;
+  color:var(--vc-muted);
+}
+
+/* Panel lateral (si se usa) */
+.vc-aside{
+  background: #fff;
+  border-radius: .75rem;
+  padding: .9rem;
+  border: 1px solid rgba(0,0,0,0.03);
+}
+
+/* Pequeños ajustes responsive */
+@media (max-width: 576px){
+  .vc-header{flex-direction:column;align-items:flex-start}
+  .vc-product-thumb{width:56px;height:56px}
+}
+
+/* Accesibilidad: foco claro */
+:focus{
+  outline: 3px solid rgba(13,110,253,0.15);
+  outline-offset: 2px;
+}
+
+/* Pequeña utilidad para destacar texto */
+.vc-highlight{
+  background: linear-gradient(90deg, rgba(13,110,253,0.12), rgba(102,16,242,0.09));
+  padding: .15rem .4rem;
+  border-radius: .35rem;
+  font-weight:600;
+}
+
+/* Footer pequeño */
+.vc-footer{
+  margin-top:1.25rem;
+  text-align:center;
+  color:var(--vc-muted);
+  font-size:.9rem;
+}
