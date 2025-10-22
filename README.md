@@ -1,4 +1,4 @@
-# Videoclup-Proyecto
+# Videoclub-Proyecto
 
 Una aplicación web para gestionar una videoteca personal. Permite registrar películas, series y documentales, organizarlos por categorías y llevar un control de lo que has visto o deseas ver.
 
