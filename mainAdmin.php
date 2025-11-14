@@ -69,6 +69,7 @@ if ($nombre_usuario !== 'admin') {
                             <td><strong><?php echo $cliente['user']; ?></strong></td>
                             <td><?php echo $cliente['email']; ?></td>
                             <td><?php echo $cliente['telefono']; ?></td>
+                            <td><a href="formUpdateCliente.php?id=<?php echo $cliente['id']; ?>" class="btn btn-sm btn-outline-primary">Editar</a></td>
                         </tr>
                         <?php endforeach; ?>
                     </tbody>

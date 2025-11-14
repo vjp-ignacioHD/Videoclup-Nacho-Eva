@@ -116,5 +116,11 @@ if (!$cliente_encontrado) {
         }
         ?>
     </div>
+    <?php if ($cliente_encontrado): ?>
+    <div class="mt-4">
+        <a href="formUpdateCliente.php?user=<?php echo urlencode($cliente_encontrado['user']); ?>" 
+           class="btn btn-warning">Editar mis datos</a>
+    </div>
+<?php endif; ?>
 </body>
 </html>
