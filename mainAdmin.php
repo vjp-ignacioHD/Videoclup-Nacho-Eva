@@ -44,6 +44,8 @@ if ($nombre_usuario !== 'admin') {
             </div>
         </div>
         
+        <a href="formCreateCliente.php" class="btn btn-primary btn-sm mb-3">Añadir Nuevo Cliente</a>
+
         <!-- LISTADO DE CLIENTES -->
         <div class="vc-admin-section">
             <h2>Listado de Clientes</h2>

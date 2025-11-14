@@ -13,13 +13,13 @@ class Cliente
 
     public $nombre;
     public $numero;
-    private $soportesAlquilados = []; // Array de objetos Soporte
+    private $soportesAlquilados = [];
     private $numSoportesAlquilados = 0;
     private $maxAlquilerConcurrente;
     
     // NUEVOS ATRIBUTOS: user y password
-    private $user;
-    private $password;
+    private $user[];
+    private $password[];
 
     // CONSTRUCTOR - MODIFICADO para aceptar user y password
     public function __construct($nombre, $numero, $user, $password, $maxAlquilerConcurrente = 3)
@@ -70,7 +70,7 @@ class Cliente
         $this->password = $password;
     }
 
-    // MÉTODOS DE GESTIÓN DE ALQUILERES (se mantienen igual)
+    // MÉTODOS DE GESTIÓN DE ALQUILERES
 
     // Este método comprueba si el cliente ya tiene alquilado un soporte
     public function tieneAlquilado(Soporte $s): bool
@@ -142,6 +142,11 @@ class Cliente
             // Si no tiene ninguno
             echo "No hay soportes alquilados actualmente.<br>";
         }
+    }
+
+        public function getAlquileres(): array
+    {
+        return $this->soportesAlquilados;
     }
 
     // MÉTODOS DE VISUALIZACIÓN
