@@ -1,12 +1,6 @@
 <?php
 session_start();
 
-// Incluimos la clase Cliente
-require_once 'app/Cliente.php';
-
-// Usamos el namespace
-use Dwes\ProyectoVideoclub\Cliente;
-
 // Lista de usuarios y contraseñas válidos
 $usuarios_permitidos = [
     'admin' => 'admin',
@@ -22,18 +16,34 @@ if (isset($usuarios_permitidos[$usuario]) && $usuarios_permitidos[$usuario] === 
     // Login correcto - guardamos en sesión
     $_SESSION['usuario'] = $usuario;
     
-    // Si es admin, cargamos datos especiales CON OBJETOS CLIENTE
+    // Si es admin, cargamos datos especiales CON ARRAYS (no objetos)
     if ($usuario === 'admin') {
         
-        // Creamos objetos Cliente con user y password
-        $cliente1 = new Cliente("Juan Pérez", 1, "juanito", "clave123", 3);
-        $cliente2 = new Cliente("María García", 2, "maria", "password456", 3);
-        $cliente3 = new Cliente("Carlos López", 3, "carlos", "miclave789", 3);
+        // Creamos arrays con los datos de clientes (incluyendo user)
+        $_SESSION['clientes'] = [
+            [
+                'id' => 1,
+                'nombre' => 'Juan Pérez',
+                'user' => 'juanito',      // NUEVO
+                'email' => 'juan@email.com',
+                'telefono' => '666111222'
+            ],
+            [
+                'id' => 2, 
+                'nombre' => 'María García',
+                'user' => 'maria',        // NUEVO
+                'email' => 'maria@email.com',
+                'telefono' => '666333444'
+            ],
+            [
+                'id' => 3,
+                'nombre' => 'Carlos López',
+                'user' => 'carlos',       // NUEVO
+                'email' => 'carlos@email.com', 
+                'telefono' => '666555666'
+            ]
+        ];
         
-        // Guardamos los objetos cliente en sesión
-        $_SESSION['clientes'] = [$cliente1, $cliente2, $cliente3];
-        
-        // Los soportes los mantenemos como array asociativo por simplicidad
         $_SESSION['soportes'] = [
             [
                 'id' => 1,
