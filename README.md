@@ -13,6 +13,7 @@ Ideal para amantes del cine y la organización digital.
 -  Marcar títulos como "vistos" o "por ver"
 -  Búsqueda rápida por título
 -  Almacenamiento local (usando `localStorage`)
+-  Inicio de sesión en base a los usuarios
 
 ---
 
@@ -27,11 +28,12 @@ Ideal para amantes del cine y la organización digital.
 
 ## Uso de IA
 
-Hemos implementado el uso de IA en nuestro codigo en diferentes situaciones, como por ejemplo:
+Hemos implementado el uso de IA en nuestro código en diferentes situaciones, como por ejemplo:
 
 - namespaces
 - require_once
-- En algun metodo el cual se nos complico
+- En algún método el cual se nos complicó
+- Con el método POST nos ayudamos levemente
 
 ---
 
