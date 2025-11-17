@@ -1,4 +1,5 @@
 <?php
+// Iniciamos sesión siendo admin
 session_start();
 
 if (!isset($_SESSION['usuario'])) {
@@ -62,6 +63,7 @@ if ($nombre_usuario !== 'admin') {
                         </tr>
                     </thead>
                     <tbody>
+                        <!-- Aquí imprimimos los datos del usuario los cuales están guardados -->
                         <?php foreach ($_SESSION['clientes'] as $cliente): ?>
                         <tr>
                             <td><?php echo $cliente['id']; ?></td>
