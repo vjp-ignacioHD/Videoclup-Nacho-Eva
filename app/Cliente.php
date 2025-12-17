@@ -32,22 +32,7 @@ class Cliente
         $this->nombre = $nombre;
         $this->email = $email;
 
-        // ✅ Inicializar Monolog: canal "VideoclubLogger"
-        $this->logger = new Logger('VideoclubLogger');
-
-        // ✅ Handler que escribe en logs/videoclub.log (nivel DEBUG)
-        $handler = new StreamHandler(__DIR__ . '/../logs/videoclub.log', Logger::DEBUG);
-
-        // ✅ Formato legible (incluye fecha, nivel, mensaje)
-        $formatter = new LineFormatter(
-            "[%datetime%] %channel%.%level_name%: %message%\n",
-            null,
-            true,   // permite arrays en contexto
-            true    // deja escapar HTML/saltos (útil si depuras)
-        );
-        $handler->setFormatter($formatter);
-
-        $this->logger->pushHandler($handler);
+        $this->logger = \Dwes\VideoClub\Util\LogFactory::createLogger();   
     }
 
     // GETTERS
