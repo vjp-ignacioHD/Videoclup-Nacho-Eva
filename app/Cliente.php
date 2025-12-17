@@ -18,8 +18,8 @@ class Cliente
     private $maxAlquilerConcurrente;
     
     // NUEVOS ATRIBUTOS: user y password
-    private $user[];
-    private $password[];
+    private $user;
+    private $password;
 
     // CONSTRUCTOR - MODIFICADO para aceptar user y password
     public function __construct($nombre, $numero, $user, $password, $maxAlquilerConcurrente = 3)
