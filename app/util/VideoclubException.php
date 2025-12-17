@@ -1,6 +1,6 @@
 <?php
 
-namespace Dwes\ProyectoVideoclub\Util;
+namespace App;
 
 class VideoclubException extends \Exception
 {

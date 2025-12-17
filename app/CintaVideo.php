@@ -1,6 +1,5 @@
 <?php
-
-namespace Dwes\ProyectoVideoclub;
+namespace App;
 
 class CintaVideo extends Soporte {
     // Atributos

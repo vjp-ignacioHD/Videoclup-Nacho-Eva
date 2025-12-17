@@ -1,6 +1,6 @@
 <?php
 
-namespace Dwes\ProyectoVideoclub;
+namespace App;
 
 class Juego extends Soporte {
     // Atributos

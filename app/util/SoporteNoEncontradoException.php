@@ -1,6 +1,5 @@
 <?php
-namespace Dwes\ProyectoVideoclub\Util;
-
+namespace App;
 class SoporteNoEncontradoException extends VideoclubException
 {
     // No necesitamos sobrescribir métodos

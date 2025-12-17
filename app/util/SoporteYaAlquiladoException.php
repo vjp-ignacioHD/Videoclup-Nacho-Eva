@@ -1,5 +1,5 @@
 <?php
-namespace Dwes\ProyectoVideoclub\Util;
+namespace App;
 
 class SoporteYaAlquiladoException extends VideoclubException
 {

@@ -1,7 +1,6 @@
 <?php
 
-// Declaramos el namespace para esta clase
-namespace Dwes\ProyectoVideoclub;
+namespace App;
 
 // Importamos las excepciones personalizadas que usará esta clase
 use Dwes\ProyectoVideoclub\Util\ClienteNoEncontradoException;
