@@ -48,18 +48,21 @@ class Videoclub
     public function incluirJuego(string $titulo, float $precio, string $consola, int $minJugadores, int $maxJugadores): void
     {
         $juego = new Juego($titulo, $this->numProductos, $precio, $consola, $minJugadores, $maxJugadores);
+        $juego->metacritic = $urlMetacritic;
         $this->incluirProducto($juego);
     }
 
     public function incluirDvd(string $titulo, float $precio, string $idiomas, string $formatoPantalla): void
     {
         $dvd = new Dvd($titulo, $this->numProductos, $precio, $idiomas, $formatoPantalla);
+        $dvd->metacritic = $urlMetacritic; // ✅ Asignar la URL
         $this->incluirProducto($dvd);
     }
 
     public function incluirCintaVideo(string $titulo, float $precio, int $duracion): void
     {
         $cinta = new CintaVideo($titulo, $this->numProductos, $precio, $duracion);
+        $cinta->metacritic = $urlMetacritic;
         $this->incluirProducto($cinta);
     }
 

@@ -2,8 +2,11 @@
 
 namespace App;
 
+
 abstract class Soporte implements Resumible
 {
+    // URL de Metacritic para este soporte.
+    public $metacritic = "";
 
     // Constante 
     private static $IVA = 0.21;
