@@ -26,6 +26,33 @@ class Dvd extends Soporte {
         echo "<strong>Idiomas:</strong> " . htmlspecialchars($this->idiomas) . "<br>";
         echo "<strong>Formato de pantalla:</strong> " . htmlspecialchars($this->formatoPantalla) . "<br>";
     }
+
+    public function getPuntuacion(): ?float
+{
+    if (empty($this->metacritic)) {
+        return null;
+    }
+
+    // Obtiene la puntuación de Metacritic para este DVD.
+    try {
+        $html = file_get_contents($this->metacritic);
+        if ($html === false) {
+            return null;
+        }
+
+        // Buscar la puntuación en el HTML de Metacritic
+        // Ejemplo: <span class="score_summary">Metascore</span><div class="metascore_w large movie positive">84</div>
+        preg_match('/<div class="metascore_w large[^"]*">(\d+)<\/div>/', $html, $matches);
+
+        if (isset($matches[1])) {
+            return (float) $matches[1];
+        }
+
+        return null;
+    } catch (\Exception $e) {
+        return null;
+    }
+}
 }
 
 ?>

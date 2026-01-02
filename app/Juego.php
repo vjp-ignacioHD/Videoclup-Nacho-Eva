@@ -44,6 +44,31 @@ class Juego extends Soporte {
         $this->muestraJugadoresPosibles();
         echo "<br>";
     }
+
+    // En Juego.php
+    public function getPuntuacion(): ?float
+    {
+        if (empty($this->metacritic)) {
+            return null;
+        }
+
+        try {
+            $html = file_get_contents($this->metacritic);
+            if ($html === false) {
+                return null;
+            }
+
+            preg_match('/<div class="metascore_w large game[^"]*">(\d+)<\/div>/', $html, $matches);
+
+            if (isset($matches[1])) {
+                return (float) $matches[1];
+            }
+
+            return null;
+        } catch (\Exception $e) {
+            return null;
+        }
+    }
 }
 
 ?>

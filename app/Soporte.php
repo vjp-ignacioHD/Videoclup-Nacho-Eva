@@ -5,6 +5,10 @@ namespace App;
 
 abstract class Soporte implements Resumible
 {
+    
+    // Obtiene la puntuación de Metacritic para este soporte.
+    abstract public function getPuntuacion(): ?float;
+
     // URL de Metacritic para este soporte.
     public $metacritic = "";
 

@@ -51,27 +51,47 @@ $vc->incluirJuego(
 $vc->incluirCintaVideo(
     "Jurassic Park", 
     9.99, 
-    127, 
+    127,
     "https://www.metacritic.com/movie/jurassic-park"
 );
 
 $vc->incluirCintaVideo(
     "Back to the Future", 
     8.99, 
-    116, 
+    116,
     "https://www.metacritic.com/movie/back-to-the-future"
 );
 
-// Alquilar productos a los socios
-$vc->alquilaSocioProducto(1, 0); // Nacho alquila Ghostbusters
-$vc->alquilaSocioProducto(2, 1); // Eva alquila Indiana Jones
+// Alquilar productos a un socio (por ejemplo, Nacho, socio 1)
+$vc->alquilaSocioProducto(1, 0); // Ghostbusters
+$vc->alquilaSocioProducto(1, 2); // Zelda
+$vc->alquilaSocioProducto(1, 4); // Jurassic Park
 
-// Mostrar resúmenes
-echo "<h2>Resumen de socios:</h2>";
-$vc->listarSocios();
+// Obtener alquileres del primer cliente
+$cliente = $vc->buscarSocio(1);
+if ($cliente) {
+    echo "<h2>Alquileres de " . $cliente->nombre . ":</h2>";
+    $alquileres = $cliente->getAlquileres();
 
-echo "<h2>Resumen de productos:</h2>";
-$vc->listarProductos();
+    if (empty($alquileres)) {
+        echo "No tiene soportes alquilados actualmente.<br>";
+    } else {
+        foreach ($alquileres as $soporte) {
+            echo "<strong>Título:</strong> " . htmlspecialchars($soporte->titulo) . "<br>";
+            
+            // Obtener y mostrar la puntuación de Metacritic
+            $puntuacion = $soporte->getPuntuacion();
+            if ($puntuacion !== null) {
+                echo "<strong>Puntuación Metacritic:</strong> " . $puntuacion . "/100<br><br>";
+            } else {
+                echo "<strong>Puntuación Metacritic:</strong> No disponible<br><br>";
+            }
+        }
+    }
+} else {
+    echo "Cliente no encontrado.";
+}
 
-echo "<h2>Estadísticas:</h2>";
+// Opcional: Mostrar estadísticas
+echo "<h2>Estadísticas del videoclub:</h2>";
 $vc->mostrarEstadisticas();
