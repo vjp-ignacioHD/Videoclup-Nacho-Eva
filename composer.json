@@ -2,17 +2,20 @@
     "name": "usuario/videoclup-nacho-eva",
     "autoload": {
         "psr-4": {
-            "App\\": "app/",
-            "Dwes\\VideoClub\\Util\\": "app/util/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "App\\Test\\": "test/"
+            "App\\": "app/"
         }
     },
     "require": {
-        "monolog/monolog": "^2.10",
-        "phpunit/phpunit": "^9.6"
+        "monolog/monolog": "^2.0",
+        "phpunit/phpunit": "^9.0"
+    },
+    "require-dev": {
+        "phpdocumentor/phpdocumentor": "^3.3.0"
+    },
+    "config": {
+        "platform": {
+            "php": "8.0.30"
+        },
+        "allow-plugins": true
     }
 }
