@@ -19,30 +19,38 @@ class Juego extends Soporte {
     // Métodos
     // Metodo para mostrar los jugadores posibles
     public function muestraJugadoresPosibles() {
+        $mensaje = "";
         if ($this->minNumJugadores == $this->maxNumJugadores) {
             if ($this->minNumJugadores == 1) {
-                echo "Para un jugador";
+                $mensaje = "Para un jugador";
             } else {
-                echo "Para " . $this->minNumJugadores . " jugadores";
+                $mensaje = "Para " . $this->minNumJugadores . " jugadores";
             }
         } else {
-            echo "De " . $this->minNumJugadores . " a " . $this->maxNumJugadores . " jugadores";
+            $mensaje = "De " . $this->minNumJugadores . " a " . $this->maxNumJugadores . " jugadores";
         }
+        
+        echo $mensaje;
+        return $mensaje;
     }
 
     // Metodo para mostrar el resumen
-    public function muestraResumen(): void
+    public function muestraResumen(): string
     {
-        // Mostramos los datos heredados manualmente
-        echo "Título: " . htmlspecialchars($this->titulo) . "<br>";
-        echo "Número: " . $this->numero . "<br>";
-        echo "Precio: " . number_format($this->getPrecio(), 2) . "€<br>";
+        $resumen = "Título: " . htmlspecialchars($this->titulo) . "<br>";
+        $resumen .= "Número: " . $this->numero . "<br>";
+        $resumen .= "Precio: " . number_format($this->getPrecio(), 2) . "€<br>";
+        $resumen .= "<strong>Consola:</strong> " . htmlspecialchars($this->consola) . "<br>";
+        $resumen .= "<strong>Jugadores posibles:</strong> ";
         
-        // Datos específicos del juego
-        echo "<strong>Consola:</strong> " . htmlspecialchars($this->consola) . "<br>";
-        echo "<strong>Jugadores posibles:</strong> ";
+        // Para la parte de jugadores, necesitamos capturar el output
+        ob_start();
         $this->muestraJugadoresPosibles();
-        echo "<br>";
+        $jugadores = ob_get_clean();
+        $resumen .= $jugadores . "<br>";
+        
+        echo $resumen;
+        return $resumen;
     }
 
     // En Juego.php

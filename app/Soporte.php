@@ -58,5 +58,5 @@ abstract class Soporte implements Resumible
     }
 
     // Este método debe ser implementado por cada clase hija
-    abstract public function muestraResumen();
+    abstract public function muestraResumen() : string;
 }

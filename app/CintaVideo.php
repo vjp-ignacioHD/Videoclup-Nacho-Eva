@@ -12,15 +12,15 @@ class CintaVideo extends Soporte {
     }
 
     // Métodos
-    public function muestraResumen(): void
+    public function muestraResumen(): string
     {
-        // Mostramos manualmente los atributos heredados de Soporte
-        echo "Título: " . htmlspecialchars($this->titulo) . "<br>";
-        echo "Número: " . $this->numero . "<br>";
-        echo "Precio: " . number_format($this->getPrecio(), 2) . "€<br>";
-        
-        // Luego añadimos la información específica de la cinta
-        echo "<strong>Duración:</strong> " . $this->duracion . " minutos<br>";
+        $resumen = "Título: " . htmlspecialchars($this->titulo) . "<br>";
+        $resumen .= "Número: " . $this->numero . "<br>";
+        $resumen .= "Precio: " . number_format($this->getPrecio(), 2) . "€<br>";
+        $resumen .= "<strong>Duración:</strong> " . $this->duracion . " minutos<br>";
+
+        echo $resumen;
+        return $resumen;
     }
 
     // En Juego.php

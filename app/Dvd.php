@@ -15,16 +15,16 @@ class Dvd extends Soporte {
     }
 
     // Métodos
-    public function muestraResumen(): void
+    public function muestraResumen(): string
     {
-        // Mostramos los datos heredados manualmente
-        echo "Título: " . htmlspecialchars($this->titulo) . "<br>";
-        echo "Número: " . $this->numero . "<br>";
-        echo "Precio: " . number_format($this->getPrecio(), 2) . "€<br>";
+        $resumen = "Título: " . htmlspecialchars($this->titulo) . "<br>";
+        $resumen .= "Número: " . $this->numero . "<br>";
+        $resumen .= "Precio: " . number_format($this->getPrecio(), 2) . "€<br>";
+        $resumen .= "<strong>Idiomas:</strong> " . htmlspecialchars($this->idiomas) . "<br>";
+        $resumen .= "<strong>Formato de pantalla:</strong> " . htmlspecialchars($this->formatoPantalla) . "<br>";
         
-        // Datos específicos del DVD
-        echo "<strong>Idiomas:</strong> " . htmlspecialchars($this->idiomas) . "<br>";
-        echo "<strong>Formato de pantalla:</strong> " . htmlspecialchars($this->formatoPantalla) . "<br>";
+        echo $resumen;
+        return $resumen;
     }
 
     public function getPuntuacion(): ?float
