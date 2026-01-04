@@ -334,3 +334,185 @@
 [2026-01-04T22:20:58.596334+01:00] VideoclubLogger.INFO: Soporte 'Película' alquilado a cliente: Cliente Test []
 [2026-01-04T22:20:58.597174+01:00] VideoclubLogger.INFO: Soporte 'DVD 1' alquilado a cliente: Test []
 [2026-01-04T22:20:58.597582+01:00] VideoclubLogger.INFO: Soporte 'Juego 1' alquilado a cliente: Test []
+[2026-01-04T22:30:55.705688+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:30:55.706196+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":1,"nombre":"María García","numero_asignado":100}
+[2026-01-04T22:30:55.709802+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":0,"titulo":"Interestelar","tipo":"App\\Dvd"}
+[2026-01-04T22:30:55.710543+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":1,"titulo":"The Legend of Zelda","tipo":"App\\Juego"}
+[2026-01-04T22:30:55.710908+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":2,"titulo":"Titanic","tipo":"App\\CintaVideo"}
+[2026-01-04T22:30:55.711404+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:30:55.711696+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":1,"nombre":"María García","numero_asignado":2}
+[2026-01-04T22:30:55.711748+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":2,"nombre":"Carlos López","numero_asignado":3}
+[2026-01-04T22:30:55.712233+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:30:55.712534+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":0,"titulo":"Interestelar","tipo":"App\\Dvd"}
+[2026-01-04T22:30:55.712579+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":1,"titulo":"The Legend of Zelda","tipo":"App\\Juego"}
+[2026-01-04T22:30:55.712613+01:00] VideoclubLogger.WARNING: Cliente no encontrado al intentar alquilar {"num_socio":1,"num_producto":0}
+[2026-01-04T22:30:55.713224+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":0,"titulo":"Interestelar","tipo":"App\\Dvd"}
+[2026-01-04T22:30:55.713498+01:00] VideoclubLogger.WARNING: Cliente no encontrado al intentar alquilar {"num_socio":999,"num_producto":0}
+[2026-01-04T22:30:55.714358+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:30:55.714637+01:00] VideoclubLogger.WARNING: Cliente no encontrado al intentar alquilar {"num_socio":1,"num_producto":999}
+[2026-01-04T22:30:55.715148+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:30:55.715435+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":0,"titulo":"Interestelar","tipo":"App\\Dvd"}
+[2026-01-04T22:30:55.715478+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":1,"titulo":"The Legend of Zelda","tipo":"App\\Juego"}
+[2026-01-04T22:30:55.715513+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":2,"titulo":"Titanic","tipo":"App\\CintaVideo"}
+[2026-01-04T22:30:55.715545+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":3,"titulo":"Matrix","tipo":"App\\Dvd"}
+[2026-01-04T22:30:55.715577+01:00] VideoclubLogger.WARNING: Cliente no encontrado en alquiler múltiple {"num_socio":1}
+[2026-01-04T22:30:55.716415+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:30:55.716826+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":0,"titulo":"Interestelar","tipo":"App\\Dvd"}
+[2026-01-04T22:30:55.716869+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":1,"titulo":"The Legend of Zelda","tipo":"App\\Juego"}
+[2026-01-04T22:30:55.716900+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":2,"titulo":"Titanic","tipo":"App\\CintaVideo"}
+[2026-01-04T22:30:55.716928+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":3,"titulo":"Matrix","tipo":"App\\Dvd"}
+[2026-01-04T22:30:55.716954+01:00] VideoclubLogger.WARNING: Cliente no encontrado en alquiler múltiple {"num_socio":1}
+[2026-01-04T22:30:55.717462+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:30:55.717748+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":0,"titulo":"Pelicula 1","tipo":"App\\Dvd"}
+[2026-01-04T22:30:55.717791+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":1,"titulo":"Pelicula 2","tipo":"App\\Dvd"}
+[2026-01-04T22:30:55.717824+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":2,"titulo":"Pelicula 3","tipo":"App\\Dvd"}
+[2026-01-04T22:30:55.717857+01:00] VideoclubLogger.WARNING: Cliente no encontrado en alquiler múltiple {"num_socio":1}
+[2026-01-04T22:30:55.718604+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:30:55.718883+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":0,"titulo":"Pelicula 1","tipo":"App\\Dvd"}
+[2026-01-04T22:30:55.718925+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":1,"titulo":"Pelicula 2","tipo":"App\\Dvd"}
+[2026-01-04T22:30:55.718960+01:00] VideoclubLogger.WARNING: Cliente no encontrado al intentar alquilar {"num_socio":1,"num_producto":0}
+[2026-01-04T22:30:55.719005+01:00] VideoclubLogger.WARNING: Cliente no encontrado en alquiler múltiple {"num_socio":1}
+[2026-01-04T22:30:55.719475+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:30:55.719752+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":0,"titulo":"Interestelar","tipo":"App\\Dvd"}
+[2026-01-04T22:30:55.719828+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":1,"titulo":"The Legend of Zelda","tipo":"App\\Juego"}
+[2026-01-04T22:30:55.719867+01:00] VideoclubLogger.WARNING: Cliente no encontrado al intentar alquilar {"num_socio":1,"num_producto":0}
+[2026-01-04T22:30:55.719907+01:00] VideoclubLogger.WARNING: Cliente no encontrado al intentar alquilar {"num_socio":1,"num_producto":1}
+[2026-01-04T22:30:55.720550+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:30:55.720835+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":0,"titulo":"Interestelar","tipo":"App\\Dvd"}
+[2026-01-04T22:30:55.720878+01:00] VideoclubLogger.WARNING: Cliente no encontrado al intentar alquilar {"num_socio":1,"num_producto":0}
+[2026-01-04T22:30:55.721529+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:30:55.721854+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":0,"titulo":"Pelicula 1","tipo":"App\\Dvd"}
+[2026-01-04T22:30:55.721895+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":1,"titulo":"Pelicula 2","tipo":"App\\Dvd"}
+[2026-01-04T22:30:55.721925+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":2,"titulo":"Pelicula 3","tipo":"App\\Dvd"}
+[2026-01-04T22:30:55.721954+01:00] VideoclubLogger.WARNING: Cliente no encontrado en alquiler múltiple {"num_socio":1}
+[2026-01-04T22:30:55.722390+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:30:55.722692+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":0,"titulo":"Pelicula 1","tipo":"App\\Dvd"}
+[2026-01-04T22:30:55.722734+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":1,"titulo":"Pelicula 2","tipo":"App\\Dvd"}
+[2026-01-04T22:30:55.722768+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":2,"titulo":"Pelicula 3","tipo":"App\\Dvd"}
+[2026-01-04T22:30:55.722799+01:00] VideoclubLogger.WARNING: Cliente no encontrado en alquiler múltiple {"num_socio":1}
+[2026-01-04T22:30:55.723277+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:30:55.723553+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":0,"titulo":"Pelicula 1","tipo":"App\\Dvd"}
+[2026-01-04T22:30:55.723595+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":1,"titulo":"Pelicula 2","tipo":"App\\Dvd"}
+[2026-01-04T22:30:55.723629+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":2,"titulo":"Pelicula 3","tipo":"App\\Dvd"}
+[2026-01-04T22:30:55.723661+01:00] VideoclubLogger.WARNING: Cliente no encontrado en alquiler múltiple {"num_socio":1}
+[2026-01-04T22:30:55.724153+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:30:55.724445+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":1,"nombre":"María García","numero_asignado":2}
+[2026-01-04T22:30:55.724488+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":0,"titulo":"Pelicula 1","tipo":"App\\Dvd"}
+[2026-01-04T22:30:55.724522+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":1,"titulo":"Pelicula 2","tipo":"App\\Dvd"}
+[2026-01-04T22:30:55.724555+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":2,"titulo":"Pelicula 3","tipo":"App\\Dvd"}
+[2026-01-04T22:30:55.724591+01:00] VideoclubLogger.WARNING: Cliente no encontrado al intentar alquilar {"num_socio":1,"num_producto":0}
+[2026-01-04T22:30:55.724633+01:00] VideoclubLogger.WARNING: Cliente no encontrado al intentar alquilar {"num_socio":1,"num_producto":1}
+[2026-01-04T22:30:55.724667+01:00] VideoclubLogger.WARNING: Cliente no encontrado al intentar alquilar {"num_socio":2,"num_producto":2}
+[2026-01-04T22:30:55.725620+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:30:55.726200+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":0,"titulo":"Interestelar","tipo":"App\\Dvd"}
+[2026-01-04T22:30:55.727645+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:30:55.728039+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":1,"nombre":"María García","numero_asignado":2}
+[2026-01-04T22:30:55.728085+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":0,"titulo":"Interestelar","tipo":"App\\Dvd"}
+[2026-01-04T22:30:55.728119+01:00] VideoclubLogger.WARNING: Cliente no encontrado al intentar alquilar {"num_socio":1,"num_producto":0}
+[2026-01-04T22:30:55.728164+01:00] VideoclubLogger.WARNING: Cliente no encontrado al intentar alquilar {"num_socio":2,"num_producto":0}
+[2026-01-04T22:30:55.728886+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:30:55.729178+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":0,"titulo":"Pelicula 1","tipo":"App\\Dvd"}
+[2026-01-04T22:30:55.729220+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":1,"titulo":"Pelicula 2","tipo":"App\\Dvd"}
+[2026-01-04T22:30:55.729254+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":2,"titulo":"Pelicula 3","tipo":"App\\Dvd"}
+[2026-01-04T22:30:55.729287+01:00] VideoclubLogger.WARNING: Cliente no encontrado al intentar alquilar {"num_socio":1,"num_producto":0}
+[2026-01-04T22:30:55.729324+01:00] VideoclubLogger.WARNING: Cliente no encontrado al intentar alquilar {"num_socio":1,"num_producto":1}
+[2026-01-04T22:30:55.729358+01:00] VideoclubLogger.WARNING: Cliente no encontrado al intentar alquilar {"num_socio":1,"num_producto":2}
+[2026-01-04T22:30:55.730004+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:30:55.730287+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":0,"titulo":"Pelicula 1","tipo":"App\\Dvd"}
+[2026-01-04T22:30:55.730328+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":1,"titulo":"Pelicula 2","tipo":"App\\Dvd"}
+[2026-01-04T22:30:55.730358+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":2,"titulo":"Pelicula 3","tipo":"App\\Dvd"}
+[2026-01-04T22:30:55.730385+01:00] VideoclubLogger.WARNING: Cliente no encontrado al intentar alquilar {"num_socio":1,"num_producto":0}
+[2026-01-04T22:30:55.730419+01:00] VideoclubLogger.WARNING: Cliente no encontrado en alquiler múltiple {"num_socio":1}
+[2026-01-04T22:34:26.473336+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:34:26.473983+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":1,"nombre":"María García","numero_asignado":100}
+[2026-01-04T22:34:26.479036+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":0,"titulo":"Interestelar","tipo":"App\\Dvd"}
+[2026-01-04T22:34:26.480028+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":1,"titulo":"The Legend of Zelda","tipo":"App\\Juego"}
+[2026-01-04T22:34:26.480572+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":2,"titulo":"Titanic","tipo":"App\\CintaVideo"}
+[2026-01-04T22:34:26.481943+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:34:26.482430+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":1,"nombre":"María García","numero_asignado":2}
+[2026-01-04T22:34:26.482515+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":2,"nombre":"Carlos López","numero_asignado":3}
+[2026-01-04T22:34:26.483219+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:34:26.484023+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":0,"titulo":"Interestelar","tipo":"App\\Dvd"}
+[2026-01-04T22:34:26.484127+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":1,"titulo":"The Legend of Zelda","tipo":"App\\Juego"}
+[2026-01-04T22:34:26.484215+01:00] VideoclubLogger.WARNING: Cliente no encontrado al intentar alquilar {"num_socio":1,"num_producto":0}
+[2026-01-04T22:34:26.485040+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":0,"titulo":"Interestelar","tipo":"App\\Dvd"}
+[2026-01-04T22:34:26.485517+01:00] VideoclubLogger.WARNING: Cliente no encontrado al intentar alquilar {"num_socio":999,"num_producto":0}
+[2026-01-04T22:34:26.486752+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:34:26.487184+01:00] VideoclubLogger.WARNING: Cliente no encontrado al intentar alquilar {"num_socio":1,"num_producto":999}
+[2026-01-04T22:34:26.487898+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:34:26.488356+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":0,"titulo":"Pelicula 1","tipo":"App\\Dvd"}
+[2026-01-04T22:34:26.488424+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":1,"titulo":"Pelicula 2","tipo":"App\\Dvd"}
+[2026-01-04T22:34:26.488481+01:00] VideoclubLogger.WARNING: Cliente no encontrado en alquiler múltiple {"num_socio":1}
+[2026-01-04T22:34:26.489749+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:34:26.490199+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":0,"titulo":"Pelicula 1","tipo":"App\\Dvd"}
+[2026-01-04T22:34:26.490267+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":1,"titulo":"Pelicula 2","tipo":"App\\Dvd"}
+[2026-01-04T22:34:26.490321+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":2,"titulo":"Pelicula 3","tipo":"App\\Dvd"}
+[2026-01-04T22:34:26.490371+01:00] VideoclubLogger.WARNING: Cliente no encontrado en alquiler múltiple {"num_socio":1}
+[2026-01-04T22:34:26.491123+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:34:26.491570+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":0,"titulo":"Interestelar","tipo":"App\\Dvd"}
+[2026-01-04T22:34:26.491638+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":1,"titulo":"The Legend of Zelda","tipo":"App\\Juego"}
+[2026-01-04T22:34:26.491693+01:00] VideoclubLogger.WARNING: Cliente no encontrado al intentar alquilar {"num_socio":1,"num_producto":0}
+[2026-01-04T22:34:26.491753+01:00] VideoclubLogger.WARNING: Cliente no encontrado al intentar alquilar {"num_socio":1,"num_producto":1}
+[2026-01-04T22:34:26.492470+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:34:26.492925+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":1,"nombre":"María García","numero_asignado":2}
+[2026-01-04T22:34:26.492994+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":0,"titulo":"Pelicula 1","tipo":"App\\Dvd"}
+[2026-01-04T22:34:26.493049+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":1,"titulo":"Pelicula 2","tipo":"App\\Dvd"}
+[2026-01-04T22:34:26.493100+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":2,"titulo":"Pelicula 3","tipo":"App\\Dvd"}
+[2026-01-04T22:34:26.493157+01:00] VideoclubLogger.WARNING: Cliente no encontrado al intentar alquilar {"num_socio":1,"num_producto":0}
+[2026-01-04T22:34:26.493220+01:00] VideoclubLogger.WARNING: Cliente no encontrado al intentar alquilar {"num_socio":1,"num_producto":1}
+[2026-01-04T22:34:26.493275+01:00] VideoclubLogger.WARNING: Cliente no encontrado al intentar alquilar {"num_socio":2,"num_producto":2}
+[2026-01-04T22:34:26.493956+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:34:26.494390+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":0,"titulo":"Interestelar","tipo":"App\\Dvd"}
+[2026-01-04T22:34:26.495089+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:34:26.495538+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":1,"nombre":"María García","numero_asignado":2}
+[2026-01-04T22:34:26.495604+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":0,"titulo":"Interestelar","tipo":"App\\Dvd"}
+[2026-01-04T22:34:26.495653+01:00] VideoclubLogger.WARNING: Cliente no encontrado al intentar alquilar {"num_socio":1,"num_producto":0}
+[2026-01-04T22:34:26.495763+01:00] VideoclubLogger.WARNING: Cliente no encontrado al intentar alquilar {"num_socio":2,"num_producto":0}
+[2026-01-04T22:34:26.496474+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:34:26.496909+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":0,"titulo":"Pelicula 1","tipo":"App\\Dvd"}
+[2026-01-04T22:34:26.496978+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":1,"titulo":"Pelicula 2","tipo":"App\\Dvd"}
+[2026-01-04T22:34:26.497032+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":2,"titulo":"Pelicula 3","tipo":"App\\Dvd"}
+[2026-01-04T22:34:26.497083+01:00] VideoclubLogger.WARNING: Cliente no encontrado al intentar alquilar {"num_socio":1,"num_producto":0}
+[2026-01-04T22:34:26.497147+01:00] VideoclubLogger.WARNING: Cliente no encontrado al intentar alquilar {"num_socio":1,"num_producto":1}
+[2026-01-04T22:34:26.497202+01:00] VideoclubLogger.WARNING: Cliente no encontrado al intentar alquilar {"num_socio":1,"num_producto":2}
+[2026-01-04T22:38:32.246682+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:38:32.248623+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":0,"titulo":"Interestelar","tipo":"App\\Dvd"}
+[2026-01-04T22:38:32.249204+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":1,"titulo":"Zelda","tipo":"App\\Juego"}
+[2026-01-04T22:38:32.249550+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":2,"titulo":"Titanic","tipo":"App\\CintaVideo"}
+[2026-01-04T22:38:32.250029+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:38:32.250304+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":0,"titulo":"Pelicula","tipo":"App\\Dvd"}
+[2026-01-04T22:38:32.250348+01:00] VideoclubLogger.WARNING: Cliente no encontrado al intentar alquilar {"num_socio":1,"num_producto":0}
+[2026-01-04T22:38:32.254019+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":0,"titulo":"Pelicula","tipo":"App\\Dvd"}
+[2026-01-04T22:38:32.254370+01:00] VideoclubLogger.WARNING: Cliente no encontrado al intentar alquilar {"num_socio":999,"num_producto":0}
+[2026-01-04T22:38:32.254899+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:38:32.255168+01:00] VideoclubLogger.WARNING: Cliente no encontrado al intentar alquilar {"num_socio":1,"num_producto":999}
+[2026-01-04T22:38:32.255642+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:38:32.255938+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":0,"titulo":"Pelicula 1","tipo":"App\\Dvd"}
+[2026-01-04T22:38:32.255979+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":1,"titulo":"Pelicula 2","tipo":"App\\Dvd"}
+[2026-01-04T22:38:32.256013+01:00] VideoclubLogger.WARNING: Cliente no encontrado en alquiler múltiple {"num_socio":1}
+[2026-01-04T22:38:32.256527+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:38:32.256795+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":0,"titulo":"Pelicula","tipo":"App\\Dvd"}
+[2026-01-04T22:38:32.256837+01:00] VideoclubLogger.WARNING: Cliente no encontrado al intentar alquilar {"num_socio":1,"num_producto":0}
+[2026-01-04T22:38:32.257329+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:38:32.257708+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":0,"titulo":"Pelicula 1","tipo":"App\\Dvd"}
+[2026-01-04T22:38:32.257748+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":1,"titulo":"Pelicula 2","tipo":"App\\Dvd"}
+[2026-01-04T22:38:32.257777+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":2,"titulo":"Pelicula 3","tipo":"App\\Dvd"}
+[2026-01-04T22:38:32.257804+01:00] VideoclubLogger.WARNING: Cliente no encontrado en alquiler múltiple {"num_socio":1}
+[2026-01-04T22:38:32.258331+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:38:32.258651+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":0,"titulo":"Pelicula","tipo":"App\\Dvd"}
+[2026-01-04T22:38:32.259286+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:38:32.259577+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":1,"nombre":"María García","numero_asignado":2}
+[2026-01-04T22:38:32.261675+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:38:32.261967+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":1,"nombre":"María García","numero_asignado":2}
+[2026-01-04T22:38:32.262010+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":0,"titulo":"Pelicula","tipo":"App\\Dvd"}
+[2026-01-04T22:38:32.262044+01:00] VideoclubLogger.WARNING: Cliente no encontrado al intentar alquilar {"num_socio":1,"num_producto":0}
+[2026-01-04T22:38:32.262519+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:38:32.262784+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":0,"titulo":"Pelicula 1","tipo":"App\\Dvd"}
+[2026-01-04T22:38:32.262826+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":1,"titulo":"Pelicula 2","tipo":"App\\Dvd"}
+[2026-01-04T22:38:32.262859+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":2,"titulo":"Pelicula 3","tipo":"App\\Dvd"}
+[2026-01-04T22:38:32.262891+01:00] VideoclubLogger.WARNING: Cliente no encontrado al intentar alquilar {"num_socio":1,"num_producto":0}
+[2026-01-04T22:38:32.263363+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:38:32.263642+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":1,"nombre":"María García","numero_asignado":2}
+[2026-01-04T22:38:32.263685+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":0,"titulo":"Pelicula 1","tipo":"App\\Dvd"}
+[2026-01-04T22:38:32.263718+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":1,"titulo":"Pelicula 2","tipo":"App\\Dvd"}
+[2026-01-04T22:38:32.263749+01:00] VideoclubLogger.WARNING: Cliente no encontrado al intentar alquilar {"num_socio":1,"num_producto":0}

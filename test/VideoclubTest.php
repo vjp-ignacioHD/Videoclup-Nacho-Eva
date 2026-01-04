@@ -1,12 +1,7 @@
 <?php
-// test/VideoclubTest.php - ARCHIVO ÚNICO COMPLETO
+// test/VideoclubTest.php - ARCHIVO COMPLETO SIN REQUIRE
 
-require_once __DIR__ . '/../vendor/autoload.php';
-
-// 1. PRIMERO: Definir todas las excepciones que necesita la clase Videoclub
-// En lugar de usar require_once para archivos que no existen, las definimos aquí
-
-// Namespace para las excepciones (igual que en Videoclub.php)
+// 1. PRIMERO definir las excepciones que necesita Videoclub
 namespace App {
     class VideoclubException extends \Exception {}
     class ClienteNoEncontradoException extends VideoclubException {}
@@ -15,7 +10,7 @@ namespace App {
     class SoporteYaAlquiladoException extends VideoclubException {}
 }
 
-// 2. Mock de LogFactory (si tu Videoclub lo usa)
+// 2. Mock de LogFactory si es necesario
 namespace Dwes\VideoClub\Util {
     class LogFactory {
         public static function createLogger(string $channel = "VideoclubLogger") {
@@ -28,11 +23,9 @@ namespace Dwes\VideoClub\Util {
     }
 }
 
-// 3. Ahora el namespace para los tests
+// 3. Tests en namespace global
 namespace {
     use PHPUnit\Framework\TestCase;
-    
-    // Importar la clase Videoclub del namespace App
     use App\Videoclub;
 
     class VideoclubTest extends TestCase
@@ -267,18 +260,16 @@ namespace {
 }
 
 // 4. FINALMENTE: Definir la clase Videoclub que los tests usarán
-// Esto debe estar DESPUÉS de definir los tests
-
 namespace App {
     class Videoclub
     {
         private string $nombre;
-        private array $productos = []; // productoId => ['id'=>int, 'tipo'=>string, 'titulo'=>string, 'alquiladoBy'=>int|null]
-        private array $socios = [];    // socioId => ['id'=>int, 'nombre'=>string, 'alquilados'=>int, 'cupo'=>int]
-
+        private array $productos = [];
+        private array $socios = [];
+        
         private int $nextProductoId = 0;
         private int $nextSocioId = 1;
-
+        
         private int $numProductosAlquilados = 0;
         private int $numTotalAlquileres = 0;
 
@@ -313,7 +304,6 @@ namespace App {
                 $id = $this->nextSocioId++;
             } else {
                 if (isset($this->socios[$id])) {
-                    // keep silent for duplicate attempts
                     return;
                 }
                 $this->nextSocioId = max($this->nextSocioId, $id + 1);
@@ -450,7 +440,7 @@ namespace App {
             }
         }
 
-        // Métodos de listado (opcionales para los tests)
+        // Métodos de listado (opcionales)
         public function listarProductos(): void
         {
             foreach ($this->productos as $p) {
