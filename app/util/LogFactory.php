@@ -3,13 +3,13 @@
 namespace Dwes\VideoClub\Util;
 
 use Monolog\Logger;
-use Monolog\LoggerInterface; // ✅ Importamos la interfaz
+use Monolog\LoggerInterface;
 use Monolog\Handler\StreamHandler;
 use Monolog\Formatter\LineFormatter;
 
 class LogFactory
 {
-    public static function createLogger(string $channel = 'VideoclubLogger'): LoggerInterface // ✅ Tipo de retorno cambiado
+    public static function createLogger(string $channel = 'VideoclubLogger'): Logger // ✅ Cambiar a Logger, no LoggerInterface
     {
         $logger = new Logger($channel);
         $logPath = __DIR__ . '/../../logs/videoclub.log';
@@ -23,6 +23,6 @@ class LogFactory
         $handler->setFormatter($formatter);
         $logger->pushHandler($handler);
 
-        return $logger; // ✅ Logger implementa LoggerInterface → válido
+        return $logger; // ✅ Esto está bien porque Logger implementa LoggerInterface
     }
 }

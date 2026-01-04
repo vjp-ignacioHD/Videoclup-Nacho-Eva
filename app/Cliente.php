@@ -32,7 +32,7 @@ class Cliente
         $this->nombre = $nombre;
         $this->email = $email;
 
-        $this->logger = \Dwes\VideoClub\Util\LogFactory::createLogger();   
+        $this->logger = \Dwes\VideoClub\Util\LogFactory::createLogger();
     }
 
     // GETTERS
