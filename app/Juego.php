@@ -1,14 +1,11 @@
 <?php
-
 namespace App;
 
 class Juego extends Soporte {
-    // Atributos
     public $consola;
     private $minNumJugadores;
     private $maxNumJugadores;
 
-    // Constructor
     public function __construct($titulo, $numero, $precio, $consola, $minNumJugadores, $maxNumJugadores) {
         parent::__construct($titulo, $numero, $precio);
         $this->consola = $consola;
@@ -16,9 +13,8 @@ class Juego extends Soporte {
         $this->maxNumJugadores = $maxNumJugadores;
     }
 
-    // Métodos
-    // Metodo para mostrar los jugadores posibles
-    public function muestraJugadoresPosibles() {
+    public function muestraJugadoresPosibles(): string
+    {
         $mensaje = "";
         if ($this->minNumJugadores == $this->maxNumJugadores) {
             if ($this->minNumJugadores == 1) {
@@ -34,7 +30,6 @@ class Juego extends Soporte {
         return $mensaje;
     }
 
-    // Metodo para mostrar el resumen
     public function muestraResumen(): string
     {
         $resumen = "Título: " . htmlspecialchars($this->titulo) . "<br>";
@@ -43,7 +38,6 @@ class Juego extends Soporte {
         $resumen .= "<strong>Consola:</strong> " . htmlspecialchars($this->consola) . "<br>";
         $resumen .= "<strong>Jugadores posibles:</strong> ";
         
-        // Para la parte de jugadores, necesitamos capturar el output
         ob_start();
         $this->muestraJugadoresPosibles();
         $jugadores = ob_get_clean();
@@ -53,7 +47,6 @@ class Juego extends Soporte {
         return $resumen;
     }
 
-    // En Juego.php
     public function getPuntuacion(): ?float
     {
         if (empty($this->metacritic)) {
@@ -78,5 +71,4 @@ class Juego extends Soporte {
         }
     }
 }
-
 ?>
