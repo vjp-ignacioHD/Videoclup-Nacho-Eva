@@ -76,10 +76,10 @@ class ClienteTest extends TestCase
     public static function soportesProvider(): array
     {
         return [
-            'DVD' => [new Dvd('El Padrino', 100, 14.99, 'Español, Inglés', '16:9')],
+            'DVD' => [new Dvd('El Padrino', 100, 14.99, 'Español, Inglés', '16:9',120)],
             'Juego' => [new Juego('The Legend of Zelda', 101, 39.99, 'Nintendo Switch', 1, 1)],
             'Cinta Video' => [new CintaVideo('Titanic', 102, 9.99, 194)],
-            'DVD 2' => [new Dvd('Interestelar', 103, 19.99, 'Español, Inglés, Francés', 'IMAX')],
+            'DVD 2' => [new Dvd('Interestelar', 103, 19.99, 'Español, Inglés, Francés', 'IMAX',169)],
             'Juego 2' => [new Juego('Super Mario Odyssey', 104, 49.99, 'Nintendo Switch', 1, 2)],
         ];
     }
@@ -92,17 +92,17 @@ class ClienteTest extends TestCase
         return [
             '3 soportes diferentes' => [
                 [
-                    new Dvd('Pulp Fiction', 200, 12.99, 'Español', '4:3'),
+                    new Dvd('Pulp Fiction', 200, 12.99, 'Español', '4:3',154),
                     new Juego('God of War', 201, 59.99, 'PS5', 1, 1),
                     new CintaVideo('Forrest Gump', 202, 8.99, 142)
                 ]
             ],
             '5 soportes diferentes' => [
                 [
-                    new Dvd('Matrix', 300, 15.99, 'Español, Inglés', '16:9'),
+                    new Dvd('Matrix', 300, 15.99, 'Español, Inglés', '16:9',136),
                     new Juego('Cyberpunk 2077', 301, 49.99, 'PC', 1, 1),
                     new CintaVideo('Jurassic Park', 302, 7.99, 127),
-                    new Dvd('Gladiator', 303, 11.99, 'Español', '16:9'),
+                    new Dvd('Gladiator', 303, 11.99, 'Español', '16:9',105),
                     new Juego('FIFA 23', 304, 69.99, 'PS5', 1, 4)
                 ]
             ]
@@ -133,7 +133,7 @@ class ClienteTest extends TestCase
         
         // Alquilar hasta el cupo máximo
         for ($i = 0; $i < $cupo; $i++) {
-            $soporte = new Dvd("Película $i", $i, 9.99, 'Español', '16:9');
+            $soporte = new Dvd("Película $i", $i, 9.99, 'Español', '16:9',120);
             $cliente->alquilar($soporte);
             
             $this->assertSame($i + 1, $cliente->getNumSoportesAlquilados());
@@ -155,12 +155,12 @@ class ClienteTest extends TestCase
         
         // Alquilar hasta el cupo máximo
         for ($i = 0; $i < $cupo; $i++) {
-            $soporte = new Dvd("Película $i", $i, 9.99, 'Español', '16:9');
+            $soporte = new Dvd("Película $i", $i, 9.99, 'Español', '16:9',120);
             $cliente->alquilar($soporte);
         }
         
         // Intentar alquilar uno más debe lanzar excepción
-        $soporteExtra = new Dvd('Extra', 999, 9.99, 'Español', '16:9');
+        $soporteExtra = new Dvd('Extra', 999, 9.99, 'Español', '16:9',120);
         
         // Debe lanzar CupoSuperadoException
         $this->expectException(\Dwes\Videoclub\Exception\CupoSuperadoException::class);
@@ -224,7 +224,7 @@ class ClienteTest extends TestCase
         $cliente->setMaxAlquilerConcurrente(3);
         
         $soportes = [
-            new Dvd('DVD 1', 1, 10.99, 'Español', '16:9'),
+            new Dvd('DVD 1', 1, 10.99, 'Español', '16:9',130),
             new Juego('Juego 1', 2, 49.99, 'PS5', 1, 2),
             new CintaVideo('Cinta 1', 3, 7.99, 120)
         ];
@@ -296,7 +296,7 @@ class ClienteTest extends TestCase
         $cliente->setMaxAlquilerConcurrente(2);
         
         // Alquilar un soporte
-        $soporte = new Dvd('Test', 1, 9.99, 'Español', '16:9');
+        $soporte = new Dvd('Test', 1, 9.99, 'Español', '16:9',120);
         $cliente->alquilar($soporte);
         
         // Intentar devolver un soporte que no existe
@@ -347,7 +347,7 @@ class ClienteTest extends TestCase
         $cliente = new Cliente('Cliente Test', 'test@email.com');
         $cliente->setMaxAlquilerConcurrente(2);
         
-        $soporte = new Dvd('Película', 100, 12.99, 'Español', '16:9');
+        $soporte = new Dvd('Película', 100, 12.99, 'Español', '16:9',120);
         
         // Alquilar
         $cliente->alquilar($soporte);
@@ -370,8 +370,8 @@ class ClienteTest extends TestCase
      */
     public function testIdsUnicosEntreSoportes(): void
     {
-        $dvd1 = new Dvd('DVD 1', 1, 10.99, 'Español', '16:9');
-        $dvd2 = new Dvd('DVD 2', 2, 11.99, 'Inglés', '16:9');
+        $dvd1 = new Dvd('DVD 1', 1, 10.99, 'Español', '16:9',130);
+        $dvd2 = new Dvd('DVD 2', 2, 11.99, 'Inglés', '16:9',130);
         $juego1 = new Juego('Juego 1', 3, 49.99, 'PS5', 1, 2);
         $juego2 = new Juego('Juego 2', 4, 59.99, 'Xbox', 1, 4);
         
@@ -397,7 +397,7 @@ class ClienteTest extends TestCase
         $cliente = new Cliente('Test', 'test@email.com');
         $cliente->setMaxAlquilerConcurrente(3);
         
-        $soporte1 = new Dvd('DVD 1', 1, 10.99, 'Español', '16:9');
+        $soporte1 = new Dvd('DVD 1', 1, 10.99, 'Español', '16:9',130);
         $soporte2 = new Juego('Juego 1', 2, 49.99, 'PS5', 1, 2);
         
         $cliente->alquilar($soporte1);

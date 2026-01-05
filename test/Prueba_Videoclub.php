@@ -18,6 +18,7 @@ $videoclub->incluirSocio("Ana", 0);
 $videoclub->incluirSocio("Luis", 1);
 $videoclub->incluirJuego("The Legend of Zelda", 39.99, "Nintendo Switch", 1, 2);
 $videoclub->incluirDvd("Interestelar", 14.99, "Español, Inglés", "Widescreen", 169);
+$videoclub->incluirBluray("Avatar 2", 29.99, 192, true);
 $videoclub->incluirCintaVideo("Titanic", 9.99, 194);
 
 // Alquilamos productos

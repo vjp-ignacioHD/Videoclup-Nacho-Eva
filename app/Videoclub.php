@@ -264,6 +264,28 @@ class Videoclub
         ];
     }
 
+    public function incluirBluray(string $titulo, float $precio, int $duracion, bool $es4k, ?int $id = null): void
+    {
+        if ($id === null) {
+            $id = $this->nextProductoId++;
+        } else {
+            if (isset($this->productos[$id])) {
+                return;
+            }
+            $this->nextProductoId = max($this->nextProductoId, $id + 1);
+        }
+
+        $this->productos[$id] = [
+            'id' => $id,
+            'tipo' => 'bluray',
+            'titulo' => $titulo,
+            'precio' => $precio,
+            'duracion' => $duracion,
+            'es4k' => $es4k,
+            'alquiladoBy' => null
+        ];
+    }
+
     private function ensureSocioExists(int $id): void
     {
         if (!isset($this->socios[$id])) {
