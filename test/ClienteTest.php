@@ -163,7 +163,7 @@ class ClienteTest extends TestCase
         $soporteExtra = new Dvd('Extra', 999, 9.99, 'Español', '16:9');
         
         // Debe lanzar CupoSuperadoException
-        $this->expectException(\App\Util\CupoSuperadoException::class);
+        $this->expectException(\Dwes\Videoclub\Exception\CupoSuperadoException::class);
         $this->expectExceptionMessageMatches('/elementos alquilados/');
         
         $cliente->alquilar($soporteExtra);
@@ -183,7 +183,7 @@ class ClienteTest extends TestCase
         $this->assertTrue($cliente->tieneAlquilado($soporte));
         
         // Segunda vez - debe lanzar excepción
-        $this->expectException(\App\Util\SoporteYaAlquiladoException::class);
+        $this->expectException(\Dwes\Videoclub\Exception\SoporteYaAlquiladoException::class);
         $this->expectExceptionMessageMatches('/ya tiene alquilado/');
         
         $cliente->alquilar($soporte);

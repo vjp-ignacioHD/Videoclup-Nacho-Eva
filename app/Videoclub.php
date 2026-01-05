@@ -2,11 +2,11 @@
 
 namespace App;
 
-use App\Util\ClienteNoEncontradoException;
-use App\Util\SoporteNoEncontradoException;
-use App\Util\SoporteYaAlquiladoException;
-use App\Util\CupoSuperadoException;
-use App\Util\VideoclubException;
+use Dwes\Videoclub\Exception\ClienteNoExisteException;
+use Dwes\Videoclub\Exception\SoporteNoEncontradoException;
+use Dwes\Videoclub\Exception\SoporteYaAlquiladoException;
+use Dwes\Videoclub\Exception\CupoSuperadoException;
+use Dwes\Videoclub\Exception\VideoclubException;
 
 class Videoclub
 {
@@ -248,7 +248,7 @@ class Videoclub
     private function ensureSocioExists(int $id): void
     {
         if (!isset($this->socios[$id])) {
-            throw new ClienteNoEncontradoException("Socio {$id} no encontrado");
+            throw new ClienteNoExisteException("Socio {$id} no encontrado");
         }
     }
 

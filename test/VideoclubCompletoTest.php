@@ -4,10 +4,11 @@ namespace Tests;
 
 use PHPUnit\Framework\TestCase;
 use App\Videoclub;
-use App\Util\ClienteNoEncontradoException;
-use App\Util\SoporteNoEncontradoException;
-use App\Util\SoporteYaAlquiladoException;
-use App\Util\CupoSuperadoException;
+use Dwes\Videoclub\Exception\ClienteNoExisteException;  // Cambiado
+use Dwes\Videoclub\Exception\SoporteNoEncontradoException;  // Cambiado
+use Dwes\Videoclub\Exception\SoporteYaAlquiladoException;  // Cambiado
+use Dwes\Videoclub\Exception\CupoSuperadoException;  // Cambiado
+use Dwes\Videoclub\Exception\VideoclubException;  // Cambiado
 
 class VideoclubCompletoTest extends TestCase
 {
@@ -125,11 +126,11 @@ class VideoclubCompletoTest extends TestCase
         $this->assertSame(1, $socio['alquilados']);
     }
 
-    public function testAlquilaSocioProductoLanzaExcepcionSiSocioNoExiste()
+    public function testAlquilaSocioProductoLanzaClienteNoExisteException()
     {
         $this->videoclub->incluirDvd('El Padrino', 14.99, 'Español', '16:9');
         
-        $this->expectException(ClienteNoEncontradoException::class);
+        $this->expectException(ClienteNoExisteException::class);
         $this->expectExceptionMessage('Socio 999 no encontrado');
         
         $this->videoclub->alquilaSocioProducto(999, 0);
@@ -219,11 +220,11 @@ class VideoclubCompletoTest extends TestCase
         }
     }
 
-    public function testAlquilarSocioProductosLanzaExcepcionSiSocioNoExiste()
+    public function testAlquilarSocioProductosLanzaClienteNoExisteException()
     {
         $this->videoclub->incluirDvd('Película', 10, 'ES', '16:9');
         
-        $this->expectException(ClienteNoEncontradoException::class);
+        $this->expectException(ClienteNoExisteException::class);
         
         $this->videoclub->alquilarSocioProductos(999, [0]);
     }
@@ -325,11 +326,11 @@ class VideoclubCompletoTest extends TestCase
         $this->assertSame(0, $socio['alquilados']);
     }
 
-    public function testDevolverSocioProductoLanzaExcepcionSiSocioNoExiste()
+    public function testDevolverSocioProductoLanzaClienteNoExisteException()
     {
         $this->videoclub->incluirDvd('Película', 10, 'ES', '16:9');
         
-        $this->expectException(ClienteNoEncontradoException::class);
+        $this->expectException(ClienteNoExisteException::class);
         
         $this->videoclub->devolverSocioProducto(999, 0);
     }
@@ -351,7 +352,7 @@ class VideoclubCompletoTest extends TestCase
         
         $this->videoclub->alquilaSocioProducto(1, 0);
         
-        $this->expectException(\Exception::class);
+        $this->expectException(VideoclubException::class);
         $this->expectExceptionMessage('no está alquilado por el socio');
         
         $this->videoclub->devolverSocioProducto(2, 0);
@@ -363,7 +364,7 @@ class VideoclubCompletoTest extends TestCase
         $this->videoclub->incluirDvd('El Padrino', 14.99, 'Español', '16:9');
         
         // Devolver un producto que no está alquilado - DEBERÍA lanzar excepción
-        $this->expectException(\Exception::class);
+        $this->expectException(VideoclubException::class);
         $this->expectExceptionMessage('no está alquilado por el socio');
         
         $this->videoclub->devolverSocioProducto(1, 0);
@@ -372,60 +373,60 @@ class VideoclubCompletoTest extends TestCase
     // ==================== PRUEBAS DE DEVOLUCIÓN MÚLTIPLE ====================
     
     public function testDevolverSocioProductosExitoso()
-{
-    $this->videoclub->incluirSocio('Juan Pérez', null, 3);
+    {
+        $this->videoclub->incluirSocio('Juan Pérez', null, 3);
 
-    // Crear y alquilar 3 productos
-    for ($i = 0; $i < 3; $i++) {
-        $this->videoclub->incluirDvd("Película $i", 10, 'ES', '16:9');
+        // Crear y alquilar 3 productos
+        for ($i = 0; $i < 3; $i++) {
+            $this->videoclub->incluirDvd("Película $i", 10, 'ES', '16:9');
+        }
+
+        $this->videoclub->alquilarSocioProductos(1, [0, 1, 2]);
+        $this->assertSame(3, $this->videoclub->getNumProductosAlquilados());
+
+        // Devolver 2 productos
+        $this->videoclub->devolverSocioProductos(1, [0, 1]);
+
+        $this->assertSame(1, $this->videoclub->getNumProductosAlquilados());
+
+        $socio = $this->videoclub->getSocio(1);
+        $this->assertSame(1, $socio['alquilados']);
+
+        // Verificar estado de cada producto
+        $this->assertNull($this->videoclub->getProducto(0)['alquiladoBy']);
+        $this->assertNull($this->videoclub->getProducto(1)['alquiladoBy']);
+        $this->assertSame(1, $this->videoclub->getProducto(2)['alquiladoBy']);
     }
 
-    $this->videoclub->alquilarSocioProductos(1, [0, 1, 2]);
-    $this->assertSame(3, $this->videoclub->getNumProductosAlquilados());
+    public function testDevolverSocioProductosMezclados()
+    {
+        $this->videoclub->incluirSocio('Juan Pérez', null, 3);
 
-    // Devolver 2 productos
-    $this->videoclub->devolverSocioProductos(1, [0, 1]);
-
-    $this->assertSame(1, $this->videoclub->getNumProductosAlquilados());
-
-    $socio = $this->videoclub->getSocio(1);
-    $this->assertSame(1, $socio['alquilados']);
-
-    // Verificar estado de cada producto
-    $this->assertNull($this->videoclub->getProducto(0)['alquiladoBy']);
-    $this->assertNull($this->videoclub->getProducto(1)['alquiladoBy']);
-    $this->assertSame(1, $this->videoclub->getProducto(2)['alquiladoBy']);
-}
-
-public function testDevolverSocioProductosMezclados()
-{
-    $this->videoclub->incluirSocio('Juan Pérez', null, 3);
-
-    // Crear 3 productos
-    for ($i = 0; $i < 3; $i++) {
-        $this->videoclub->incluirDvd("Película $i", 10, 'ES', '16:9');
+        // Crear 3 productos
+        for ($i = 0; $i < 3; $i++) {
+            $this->videoclub->incluirDvd("Película $i", 10, 'ES', '16:9');
+        }
+        
+        // Alquilar productos 0 y 2
+        $this->videoclub->alquilaSocioProducto(1, 0);
+        $this->videoclub->alquilaSocioProducto(1, 2);
+        
+        $this->assertSame(2, $this->videoclub->getNumProductosAlquilados());
+        
+        // Intentar devolver [0, 1, 2] - el 1 no está alquilado
+        $this->videoclub->devolverSocioProductos(1, [0, 1, 2]);
+        
+        // Solo deberían haberse devuelto 0 y 2
+        $this->assertSame(0, $this->videoclub->getNumProductosAlquilados());
+        
+        // Producto 1 nunca estuvo alquilado
+        $this->assertNull($this->videoclub->getProducto(1)['alquiladoBy']);
     }
-    
-    // Alquilar productos 0 y 2
-    $this->videoclub->alquilaSocioProducto(1, 0);
-    $this->videoclub->alquilaSocioProducto(1, 2);
-    
-    $this->assertSame(2, $this->videoclub->getNumProductosAlquilados());
-    
-    // Intentar devolver [0, 1, 2] - el 1 no está alquilado
-    $this->videoclub->devolverSocioProductos(1, [0, 1, 2]);
-    
-    // Solo deberían haberse devuelto 0 y 2
-    $this->assertSame(0, $this->videoclub->getNumProductosAlquilados());
-    
-    // Producto 1 nunca estuvo alquilado
-    $this->assertNull($this->videoclub->getProducto(1)['alquiladoBy']);
-}
 
-    public function testDevolverSocioProductosLanzaExcepcionSiSocioNoExiste()
+    public function testDevolverSocioProductosLanzaClienteNoExisteException()
     {
         // Según tu implementación, SÍ lanza excepción
-        $this->expectException(ClienteNoEncontradoException::class);
+        $this->expectException(ClienteNoExisteException::class);
         
         $this->videoclub->devolverSocioProductos(999, [0]);
     }

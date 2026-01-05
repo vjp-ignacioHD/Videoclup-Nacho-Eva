@@ -1,6 +1,8 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
+use App\Videoclub;
+use Dwes\Videoclub\Exception\ClienteNoExisteException;  // Cambiado
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
@@ -36,7 +38,7 @@ class SimpleVideoclubTest extends TestCase
     
     public function testExceptionSocioNoExiste()
     {
-        $this->expectException(Exception::class);
+        $this->expectException(ClienteNoExisteException::class);  // Ya está correcto
         $this->expectExceptionMessage('Socio');
         
         $videoclub = new App\Videoclub('Test');

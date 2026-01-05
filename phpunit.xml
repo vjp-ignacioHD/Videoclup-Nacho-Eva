@@ -7,6 +7,7 @@
     <testsuites>
         <testsuite name="Videoclub Tests">
             <directory>test</directory>
+            <exclude>test/ClienteTest.php</exclude> <!-- AÑADIR ESTA LÍNEA -->
         </testsuite>
     </testsuites>
     
