@@ -67,11 +67,6 @@ class Videoclub
         ];
     }
 
-    public function incluirDvd(string $titulo, float $precio, string $idiomas, string $formato, ?int $id = null): void
-    {
-        $this->addProducto('dvd', $titulo, $id);
-    }
-
     public function incluirJuego(string $nombre, float $precio, string $plataforma, int $minJugadores, int $maxJugadores, ?int $id = null): void
     {
         $this->addProducto('juego', $nombre, $id);
@@ -132,7 +127,6 @@ class Videoclub
             $socio['alquilados']++;
             $this->numProductosAlquilados++;
             $this->numTotalAlquileres++;
-            
         } catch (VideoclubException $e) {
             throw $e;
         }
@@ -142,10 +136,10 @@ class Videoclub
     {
         try {
             $this->ensureSocioExists($socioId);
-            
+
             $socio = $this->socios[$socioId];
             $toRent = count($productoIds);
-            
+
             if ($socio['alquilados'] + $toRent > $socio['maxAlquilerConcurrente']) {
                 throw new CupoSuperadoException("El socio no puede alquilar {$toRent} elementos: tiene {$socio['alquilados']} alquilados (límite {$socio['maxAlquilerConcurrente']})");
             }
@@ -160,11 +154,10 @@ class Videoclub
             foreach ($productoIds as $pid) {
                 $this->productos[$pid]['alquiladoBy'] = $socioId;
             }
-            
+
             $this->socios[$socioId]['alquilados'] += $toRent;
             $this->numProductosAlquilados += $toRent;
             $this->numTotalAlquileres += $toRent;
-            
         } catch (VideoclubException $e) {
             throw $e;
         }
@@ -184,7 +177,6 @@ class Videoclub
             $producto['alquiladoBy'] = null;
             $this->socios[$socioId]['alquilados']--;
             $this->numProductosAlquilados--;
-            
         } catch (VideoclubException $e) {
             throw $e;
         }
@@ -194,7 +186,7 @@ class Videoclub
     {
         try {
             $this->ensureSocioExists($socioId);
-            
+
             foreach ($productoIds as $pid) {
                 $this->ensureProductoExists($pid);
                 if ($this->productos[$pid]['alquiladoBy'] === $socioId) {
@@ -203,7 +195,6 @@ class Videoclub
                     $this->numProductosAlquilados--;
                 }
             }
-            
         } catch (VideoclubException $e) {
             throw $e;
         }
@@ -223,8 +214,13 @@ class Videoclub
     {
         $output = "Socios del videoclub:\n";
         foreach ($this->socios as $s) {
-            $output .= sprintf("[%d] %s - %d alquilados (límite %d)\n", 
-                $s['id'], $s['nombre'], $s['alquilados'], $s['maxAlquilerConcurrente']);
+            $output .= sprintf(
+                "[%d] %s - %d alquilados (límite %d)\n",
+                $s['id'],
+                $s['nombre'],
+                $s['alquilados'],
+                $s['maxAlquilerConcurrente']
+            );
         }
         return $output;
     }
@@ -233,16 +229,39 @@ class Videoclub
     {
         return sprintf(
             "Estadísticas del videoclub %s:\n" .
-            "Total productos: %d\n" .
-            "Productos alquilados: %d\n" .
-            "Total socios: %d\n" .
-            "Total alquileres realizados: %d\n",
+                "Total productos: %d\n" .
+                "Productos alquilados: %d\n" .
+                "Total socios: %d\n" .
+                "Total alquileres realizados: %d\n",
             $this->nombre,
             $this->getNumProductos(),
             $this->numProductosAlquilados,
             $this->getNumSocios(),
             $this->numTotalAlquileres
         );
+    }
+
+    public function incluirDvd(string $titulo, float $precio, string $idiomas, string $formato, int $duracion, ?int $id = null): void
+    {
+        if ($id === null) {
+            $id = $this->nextProductoId++;
+        } else {
+            if (isset($this->productos[$id])) {
+                return;
+            }
+            $this->nextProductoId = max($this->nextProductoId, $id + 1);
+        }
+
+        $this->productos[$id] = [
+            'id' => $id,
+            'tipo' => 'dvd',
+            'titulo' => $titulo,
+            'precio' => $precio,
+            'idiomas' => $idiomas,
+            'formato' => $formato,
+            'duracion' => $duracion,
+            'alquiladoBy' => null
+        ];
     }
 
     private function ensureSocioExists(int $id): void

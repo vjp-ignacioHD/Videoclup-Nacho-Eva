@@ -1,14 +1,25 @@
 <?php
+
 namespace App;
 
-class Dvd extends Soporte {
+class Dvd extends Soporte
+{
     public $idiomas;
     private $formatoPantalla;
+    private $duracion; // Nueva propiedad
 
-    public function __construct($titulo, $numero, $precio, $idiomas, $formatoPantalla) {  
+    public function __construct($titulo, $numero, $precio, $idiomas, $formatoPantalla, $duracion)
+    {
         parent::__construct($titulo, $numero, $precio);
         $this->idiomas = $idiomas;
         $this->formatoPantalla = $formatoPantalla;
+        $this->duracion = $duracion;
+    }
+
+    // Getter para duración
+    public function getDuracion(): int
+    {
+        return $this->duracion;
     }
 
     public function muestraResumen(): string
@@ -16,11 +27,18 @@ class Dvd extends Soporte {
         $resumen = "Título: " . htmlspecialchars($this->titulo) . "<br>";
         $resumen .= "Número: " . $this->numero . "<br>";
         $resumen .= "Precio: " . number_format($this->getPrecio(), 2) . "€<br>";
-        $resumen .= "<strong>Idiomas:</strong> " . htmlspecialchars($this->idiomas) . "<br>";
+        $resumen .= "<strong>Duración:</strong> " . $this->duracion . " minutos<br>";
+        $resumen .= "<strong>Idiomas:</strong> " . htmlspecialchars($this->idiomas) . "<br>";  // Sin espacio
         $resumen .= "<strong>Formato de pantalla:</strong> " . htmlspecialchars($this->formatoPantalla) . "<br>";
-        
+
         echo $resumen;
         return $resumen;
+    }
+
+    // Y añadir un método para mostrar (opcional)
+    public function mostrarResumen(): void
+    {
+        echo $this->muestraResumen();
     }
 
     public function getPuntuacion(): ?float
@@ -47,4 +65,3 @@ class Dvd extends Soporte {
         }
     }
 }
-?>
