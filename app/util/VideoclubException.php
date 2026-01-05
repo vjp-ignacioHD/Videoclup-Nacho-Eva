@@ -1,8 +1,7 @@
 <?php
 
-namespace App;
+namespace App\Util;
 
-class VideoclubException extends \Exception
+class VideoClubException extends \Exception
 {
-    // No necesitamos sobrescribir métodos, ya que es una excepción simple
 }

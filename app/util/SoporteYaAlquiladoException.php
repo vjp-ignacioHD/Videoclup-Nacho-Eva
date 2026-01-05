@@ -1,7 +1,7 @@
 <?php
-namespace App;
 
-class SoporteYaAlquiladoException extends VideoclubException
+namespace App\Util;
+
+class SoporteYaAlquiladoException extends VideoClubException
 {
-    // No necesitamos sobrescribir métodos
 }

@@ -1,7 +1,7 @@
 <?php
-namespace App;
 
-class CupoSuperadoException extends VideoclubException
+namespace App\Util;
+
+class CupoSuperadoException extends VideoClubException
 {
-    // No necesitamos sobrescribir métodos
 }

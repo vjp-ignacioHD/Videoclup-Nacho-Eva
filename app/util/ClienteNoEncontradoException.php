@@ -1,7 +1,7 @@
 <?php
-namespace App;
 
-class ClienteNoEncontradoException extends VideoclubException
+namespace App\Util;
+
+class ClienteNoEncontradoException extends VideoClubException
 {
-    // No necesitamos sobrescribir métodos
 }
