@@ -1,0 +1,518 @@
+[2025-12-17T12:28:25.899360+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Laura","numero_asignado":1}
+[2025-12-17T12:28:35.816741+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Laura","numero_asignado":1}
+[2025-12-17T12:31:20.331393+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Laura","numero_asignado":1}
+[2025-12-17T12:32:31.417572+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Laura","numero_asignado":1}
+[2025-12-17T12:32:31.418313+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":0,"titulo":"Interestelar","tipo":"App\\Dvd"}
+[2025-12-17T12:32:31.420239+01:00] VideoclubLogger.WARNING: Cliente no encontrado al intentar alquilar {"num_socio":1,"num_producto":101}
+[2026-01-04T22:07:14.504011+01:00] VideoclubLogger.INFO: Soporte 'Película 0' alquilado a cliente: Juan Pérez []
+[2026-01-04T22:07:14.505904+01:00] VideoclubLogger.INFO: Soporte 'Película 0' alquilado a cliente: María García []
+[2026-01-04T22:07:14.506338+01:00] VideoclubLogger.INFO: Soporte 'Película 1' alquilado a cliente: María García []
+[2026-01-04T22:07:14.506848+01:00] VideoclubLogger.INFO: Soporte 'Película 0' alquilado a cliente: Carlos López []
+[2026-01-04T22:07:14.507281+01:00] VideoclubLogger.INFO: Soporte 'Película 1' alquilado a cliente: Carlos López []
+[2026-01-04T22:07:14.507348+01:00] VideoclubLogger.INFO: Soporte 'Película 2' alquilado a cliente: Carlos López []
+[2026-01-04T22:07:14.507837+01:00] VideoclubLogger.INFO: Soporte 'Película 0' alquilado a cliente: Ana Rodríguez []
+[2026-01-04T22:07:14.508257+01:00] VideoclubLogger.INFO: Soporte 'Película 1' alquilado a cliente: Ana Rodríguez []
+[2026-01-04T22:07:14.508322+01:00] VideoclubLogger.INFO: Soporte 'Película 2' alquilado a cliente: Ana Rodríguez []
+[2026-01-04T22:07:14.508376+01:00] VideoclubLogger.INFO: Soporte 'Película 3' alquilado a cliente: Ana Rodríguez []
+[2026-01-04T22:07:14.508427+01:00] VideoclubLogger.INFO: Soporte 'Película 4' alquilado a cliente: Ana Rodríguez []
+[2026-01-04T22:07:14.508917+01:00] VideoclubLogger.INFO: Soporte 'Película 0' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:07:14.509335+01:00] VideoclubLogger.INFO: Soporte 'Película 1' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:07:14.509399+01:00] VideoclubLogger.INFO: Soporte 'Película 2' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:07:14.509452+01:00] VideoclubLogger.INFO: Soporte 'Película 3' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:07:14.509503+01:00] VideoclubLogger.INFO: Soporte 'Película 4' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:07:14.509553+01:00] VideoclubLogger.INFO: Soporte 'Película 5' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:07:14.509604+01:00] VideoclubLogger.INFO: Soporte 'Película 6' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:07:14.509658+01:00] VideoclubLogger.INFO: Soporte 'Película 7' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:07:14.509708+01:00] VideoclubLogger.INFO: Soporte 'Película 8' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:07:14.509758+01:00] VideoclubLogger.INFO: Soporte 'Película 9' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:07:14.510364+01:00] VideoclubLogger.INFO: Soporte 'Película 0' alquilado a cliente: Juan Pérez []
+[2026-01-04T22:07:14.510780+01:00] VideoclubLogger.WARNING: Cupo de alquiler superado para cliente Juan Pérez (máx: 1) []
+[2026-01-04T22:07:14.513682+01:00] VideoclubLogger.INFO: Soporte 'Película 0' alquilado a cliente: María García []
+[2026-01-04T22:07:14.514202+01:00] VideoclubLogger.INFO: Soporte 'Película 1' alquilado a cliente: María García []
+[2026-01-04T22:07:14.514268+01:00] VideoclubLogger.WARNING: Cupo de alquiler superado para cliente María García (máx: 2) []
+[2026-01-04T22:07:14.515107+01:00] VideoclubLogger.INFO: Soporte 'Película 0' alquilado a cliente: Carlos López []
+[2026-01-04T22:07:14.515535+01:00] VideoclubLogger.INFO: Soporte 'Película 1' alquilado a cliente: Carlos López []
+[2026-01-04T22:07:14.515597+01:00] VideoclubLogger.INFO: Soporte 'Película 2' alquilado a cliente: Carlos López []
+[2026-01-04T22:07:14.515697+01:00] VideoclubLogger.WARNING: Cupo de alquiler superado para cliente Carlos López (máx: 3) []
+[2026-01-04T22:07:14.516494+01:00] VideoclubLogger.INFO: Soporte 'Película 0' alquilado a cliente: Ana Rodríguez []
+[2026-01-04T22:07:14.516926+01:00] VideoclubLogger.INFO: Soporte 'Película 1' alquilado a cliente: Ana Rodríguez []
+[2026-01-04T22:07:14.516988+01:00] VideoclubLogger.INFO: Soporte 'Película 2' alquilado a cliente: Ana Rodríguez []
+[2026-01-04T22:07:14.517038+01:00] VideoclubLogger.INFO: Soporte 'Película 3' alquilado a cliente: Ana Rodríguez []
+[2026-01-04T22:07:14.517083+01:00] VideoclubLogger.INFO: Soporte 'Película 4' alquilado a cliente: Ana Rodríguez []
+[2026-01-04T22:07:14.517130+01:00] VideoclubLogger.WARNING: Cupo de alquiler superado para cliente Ana Rodríguez (máx: 5) []
+[2026-01-04T22:07:14.518001+01:00] VideoclubLogger.INFO: Soporte 'Película 0' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:07:14.518432+01:00] VideoclubLogger.INFO: Soporte 'Película 1' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:07:14.518495+01:00] VideoclubLogger.INFO: Soporte 'Película 2' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:07:14.518545+01:00] VideoclubLogger.INFO: Soporte 'Película 3' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:07:14.518589+01:00] VideoclubLogger.INFO: Soporte 'Película 4' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:07:14.518633+01:00] VideoclubLogger.INFO: Soporte 'Película 5' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:07:14.518678+01:00] VideoclubLogger.INFO: Soporte 'Película 6' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:07:14.518721+01:00] VideoclubLogger.INFO: Soporte 'Película 7' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:07:14.518765+01:00] VideoclubLogger.INFO: Soporte 'Película 8' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:07:14.518809+01:00] VideoclubLogger.INFO: Soporte 'Película 9' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:07:14.518854+01:00] VideoclubLogger.WARNING: Cupo de alquiler superado para cliente Pedro Sánchez (máx: 10) []
+[2026-01-04T22:07:14.519882+01:00] VideoclubLogger.INFO: Soporte 'El Padrino' alquilado a cliente: Cliente 1 []
+[2026-01-04T22:07:14.520351+01:00] VideoclubLogger.INFO: Soporte 'El Padrino' alquilado a cliente: Cliente 2 []
+[2026-01-04T22:07:14.522650+01:00] VideoclubLogger.INFO: Soporte 'The Legend of Zelda' alquilado a cliente: Cliente 1 []
+[2026-01-04T22:07:14.523128+01:00] VideoclubLogger.INFO: Soporte 'The Legend of Zelda' alquilado a cliente: Cliente 2 []
+[2026-01-04T22:07:14.524098+01:00] VideoclubLogger.INFO: Soporte 'Titanic' alquilado a cliente: Cliente 1 []
+[2026-01-04T22:07:14.524519+01:00] VideoclubLogger.INFO: Soporte 'Titanic' alquilado a cliente: Cliente 2 []
+[2026-01-04T22:07:14.525479+01:00] VideoclubLogger.INFO: Soporte 'Interestelar' alquilado a cliente: Cliente 1 []
+[2026-01-04T22:07:14.525906+01:00] VideoclubLogger.INFO: Soporte 'Interestelar' alquilado a cliente: Cliente 2 []
+[2026-01-04T22:07:14.526909+01:00] VideoclubLogger.INFO: Soporte 'Super Mario Odyssey' alquilado a cliente: Cliente 1 []
+[2026-01-04T22:07:14.527341+01:00] VideoclubLogger.INFO: Soporte 'Super Mario Odyssey' alquilado a cliente: Cliente 2 []
+[2026-01-04T22:07:14.528400+01:00] VideoclubLogger.INFO: Soporte 'DVD 1' alquilado a cliente: Test Cliente []
+[2026-01-04T22:07:14.528819+01:00] VideoclubLogger.INFO: Soporte 'Juego 1' alquilado a cliente: Test Cliente []
+[2026-01-04T22:07:14.528936+01:00] VideoclubLogger.INFO: Soporte 'Cinta 1' alquilado a cliente: Test Cliente []
+[2026-01-04T22:07:14.529055+01:00] VideoclubLogger.INFO: Test Cliente devolvió el soporte: Juego 1 (Nº 2) []
+[2026-01-04T22:07:14.532517+01:00] VideoclubLogger.INFO: Soporte 'Pulp Fiction' alquilado a cliente: Cliente Multiple []
+[2026-01-04T22:07:14.533013+01:00] VideoclubLogger.INFO: Soporte 'God of War' alquilado a cliente: Cliente Multiple []
+[2026-01-04T22:07:14.533133+01:00] VideoclubLogger.INFO: Soporte 'Forrest Gump' alquilado a cliente: Cliente Multiple []
+[2026-01-04T22:07:14.533716+01:00] VideoclubLogger.INFO: Soporte 'Matrix' alquilado a cliente: Cliente Multiple []
+[2026-01-04T22:07:14.534155+01:00] VideoclubLogger.INFO: Soporte 'Cyberpunk 2077' alquilado a cliente: Cliente Multiple []
+[2026-01-04T22:07:14.534226+01:00] VideoclubLogger.INFO: Soporte 'Jurassic Park' alquilado a cliente: Cliente Multiple []
+[2026-01-04T22:07:14.534284+01:00] VideoclubLogger.INFO: Soporte 'Gladiator' alquilado a cliente: Cliente Multiple []
+[2026-01-04T22:07:14.534339+01:00] VideoclubLogger.INFO: Soporte 'FIFA 23' alquilado a cliente: Cliente Multiple []
+[2026-01-04T22:07:14.534962+01:00] VideoclubLogger.INFO: Soporte 'Test' alquilado a cliente: Cliente Test []
+[2026-01-04T22:07:14.535418+01:00] VideoclubLogger.INFO: Cliente Test intentó devolver soporte inexistente (Nº 999) []
+[2026-01-04T22:07:14.536452+01:00] VideoclubLogger.INFO: Cliente Sin Alquileres tiene 0 soporte(s) alquilado(s) []
+[2026-01-04T22:07:14.536874+01:00] VideoclubLogger.INFO: No hay soportes alquilados actualmente. []
+[2026-01-04T22:07:14.537445+01:00] VideoclubLogger.INFO: Soporte 'Matrix' alquilado a cliente: Cliente Test []
+[2026-01-04T22:07:14.537860+01:00] VideoclubLogger.WARNING: Intento de alquilar soporte ya alquilado: Matrix por cliente Cliente Test []
+[2026-01-04T22:07:14.538871+01:00] VideoclubLogger.INFO: Soporte 'Película' alquilado a cliente: Cliente Test []
+[2026-01-04T22:07:14.539328+01:00] VideoclubLogger.INFO: Cliente Test devolvió el soporte: Película (Nº 100) []
+[2026-01-04T22:07:14.539396+01:00] VideoclubLogger.INFO: Soporte 'Película' alquilado a cliente: Cliente Test []
+[2026-01-04T22:10:56.759334+01:00] VideoclubLogger.INFO: Soporte 'Película 0' alquilado a cliente: Juan Pérez []
+[2026-01-04T22:10:56.760423+01:00] VideoclubLogger.INFO: Soporte 'Película 0' alquilado a cliente: María García []
+[2026-01-04T22:10:56.760759+01:00] VideoclubLogger.INFO: Soporte 'Película 1' alquilado a cliente: María García []
+[2026-01-04T22:10:56.761036+01:00] VideoclubLogger.INFO: Soporte 'Película 0' alquilado a cliente: Carlos López []
+[2026-01-04T22:10:56.761319+01:00] VideoclubLogger.INFO: Soporte 'Película 1' alquilado a cliente: Carlos López []
+[2026-01-04T22:10:56.761357+01:00] VideoclubLogger.INFO: Soporte 'Película 2' alquilado a cliente: Carlos López []
+[2026-01-04T22:10:56.761674+01:00] VideoclubLogger.INFO: Soporte 'Película 0' alquilado a cliente: Ana Rodríguez []
+[2026-01-04T22:10:56.761938+01:00] VideoclubLogger.INFO: Soporte 'Película 1' alquilado a cliente: Ana Rodríguez []
+[2026-01-04T22:10:56.761974+01:00] VideoclubLogger.INFO: Soporte 'Película 2' alquilado a cliente: Ana Rodríguez []
+[2026-01-04T22:10:56.762002+01:00] VideoclubLogger.INFO: Soporte 'Película 3' alquilado a cliente: Ana Rodríguez []
+[2026-01-04T22:10:56.762028+01:00] VideoclubLogger.INFO: Soporte 'Película 4' alquilado a cliente: Ana Rodríguez []
+[2026-01-04T22:10:56.762305+01:00] VideoclubLogger.INFO: Soporte 'Película 0' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:10:56.762587+01:00] VideoclubLogger.INFO: Soporte 'Película 1' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:10:56.762623+01:00] VideoclubLogger.INFO: Soporte 'Película 2' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:10:56.762670+01:00] VideoclubLogger.INFO: Soporte 'Película 3' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:10:56.762701+01:00] VideoclubLogger.INFO: Soporte 'Película 4' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:10:56.762728+01:00] VideoclubLogger.INFO: Soporte 'Película 5' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:10:56.762807+01:00] VideoclubLogger.INFO: Soporte 'Película 6' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:10:56.762834+01:00] VideoclubLogger.INFO: Soporte 'Película 7' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:10:56.762887+01:00] VideoclubLogger.INFO: Soporte 'Película 8' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:10:56.762948+01:00] VideoclubLogger.INFO: Soporte 'Película 9' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:10:56.763422+01:00] VideoclubLogger.INFO: Soporte 'Película 0' alquilado a cliente: Juan Pérez []
+[2026-01-04T22:10:56.763718+01:00] VideoclubLogger.WARNING: Cupo de alquiler superado para cliente Juan Pérez (máx: 1) []
+[2026-01-04T22:10:56.764486+01:00] VideoclubLogger.INFO: Soporte 'Película 0' alquilado a cliente: María García []
+[2026-01-04T22:10:56.764765+01:00] VideoclubLogger.INFO: Soporte 'Película 1' alquilado a cliente: María García []
+[2026-01-04T22:10:56.764801+01:00] VideoclubLogger.WARNING: Cupo de alquiler superado para cliente María García (máx: 2) []
+[2026-01-04T22:10:56.765252+01:00] VideoclubLogger.INFO: Soporte 'Película 0' alquilado a cliente: Carlos López []
+[2026-01-04T22:10:56.765516+01:00] VideoclubLogger.INFO: Soporte 'Película 1' alquilado a cliente: Carlos López []
+[2026-01-04T22:10:56.765551+01:00] VideoclubLogger.INFO: Soporte 'Película 2' alquilado a cliente: Carlos López []
+[2026-01-04T22:10:56.765577+01:00] VideoclubLogger.WARNING: Cupo de alquiler superado para cliente Carlos López (máx: 3) []
+[2026-01-04T22:10:56.765888+01:00] VideoclubLogger.INFO: Soporte 'Película 0' alquilado a cliente: Ana Rodríguez []
+[2026-01-04T22:10:56.766135+01:00] VideoclubLogger.INFO: Soporte 'Película 1' alquilado a cliente: Ana Rodríguez []
+[2026-01-04T22:10:56.766171+01:00] VideoclubLogger.INFO: Soporte 'Película 2' alquilado a cliente: Ana Rodríguez []
+[2026-01-04T22:10:56.766219+01:00] VideoclubLogger.INFO: Soporte 'Película 3' alquilado a cliente: Ana Rodríguez []
+[2026-01-04T22:10:56.766258+01:00] VideoclubLogger.INFO: Soporte 'Película 4' alquilado a cliente: Ana Rodríguez []
+[2026-01-04T22:10:56.766281+01:00] VideoclubLogger.WARNING: Cupo de alquiler superado para cliente Ana Rodríguez (máx: 5) []
+[2026-01-04T22:10:56.766597+01:00] VideoclubLogger.INFO: Soporte 'Película 0' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:10:56.766958+01:00] VideoclubLogger.INFO: Soporte 'Película 1' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:10:56.767004+01:00] VideoclubLogger.INFO: Soporte 'Película 2' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:10:56.767029+01:00] VideoclubLogger.INFO: Soporte 'Película 3' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:10:56.767052+01:00] VideoclubLogger.INFO: Soporte 'Película 4' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:10:56.767075+01:00] VideoclubLogger.INFO: Soporte 'Película 5' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:10:56.767097+01:00] VideoclubLogger.INFO: Soporte 'Película 6' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:10:56.767120+01:00] VideoclubLogger.INFO: Soporte 'Película 7' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:10:56.767142+01:00] VideoclubLogger.INFO: Soporte 'Película 8' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:10:56.767165+01:00] VideoclubLogger.INFO: Soporte 'Película 9' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:10:56.767188+01:00] VideoclubLogger.WARNING: Cupo de alquiler superado para cliente Pedro Sánchez (máx: 10) []
+[2026-01-04T22:10:56.767581+01:00] VideoclubLogger.INFO: Soporte 'El Padrino' alquilado a cliente: Cliente 1 []
+[2026-01-04T22:10:56.767850+01:00] VideoclubLogger.INFO: Soporte 'El Padrino' alquilado a cliente: Cliente 2 []
+[2026-01-04T22:10:56.770918+01:00] VideoclubLogger.INFO: Soporte 'The Legend of Zelda' alquilado a cliente: Cliente 1 []
+[2026-01-04T22:10:56.771242+01:00] VideoclubLogger.INFO: Soporte 'The Legend of Zelda' alquilado a cliente: Cliente 2 []
+[2026-01-04T22:10:56.771982+01:00] VideoclubLogger.INFO: Soporte 'Titanic' alquilado a cliente: Cliente 1 []
+[2026-01-04T22:10:56.772232+01:00] VideoclubLogger.INFO: Soporte 'Titanic' alquilado a cliente: Cliente 2 []
+[2026-01-04T22:10:56.772937+01:00] VideoclubLogger.INFO: Soporte 'Interestelar' alquilado a cliente: Cliente 1 []
+[2026-01-04T22:10:56.773182+01:00] VideoclubLogger.INFO: Soporte 'Interestelar' alquilado a cliente: Cliente 2 []
+[2026-01-04T22:10:56.773883+01:00] VideoclubLogger.INFO: Soporte 'Super Mario Odyssey' alquilado a cliente: Cliente 1 []
+[2026-01-04T22:10:56.774134+01:00] VideoclubLogger.INFO: Soporte 'Super Mario Odyssey' alquilado a cliente: Cliente 2 []
+[2026-01-04T22:10:56.774884+01:00] VideoclubLogger.INFO: Soporte 'DVD 1' alquilado a cliente: Test Cliente []
+[2026-01-04T22:10:56.775133+01:00] VideoclubLogger.INFO: Soporte 'Juego 1' alquilado a cliente: Test Cliente []
+[2026-01-04T22:10:56.775170+01:00] VideoclubLogger.INFO: Soporte 'Cinta 1' alquilado a cliente: Test Cliente []
+[2026-01-04T22:10:56.775202+01:00] VideoclubLogger.INFO: Test Cliente devolvió el soporte: Juego 1 (Nº 2) []
+[2026-01-04T22:10:56.777225+01:00] VideoclubLogger.INFO: Soporte 'Pulp Fiction' alquilado a cliente: Cliente Multiple []
+[2026-01-04T22:10:56.777516+01:00] VideoclubLogger.INFO: Soporte 'God of War' alquilado a cliente: Cliente Multiple []
+[2026-01-04T22:10:56.777557+01:00] VideoclubLogger.INFO: Soporte 'Forrest Gump' alquilado a cliente: Cliente Multiple []
+[2026-01-04T22:10:56.777910+01:00] VideoclubLogger.INFO: Soporte 'Matrix' alquilado a cliente: Cliente Multiple []
+[2026-01-04T22:10:56.778169+01:00] VideoclubLogger.INFO: Soporte 'Cyberpunk 2077' alquilado a cliente: Cliente Multiple []
+[2026-01-04T22:10:56.778210+01:00] VideoclubLogger.INFO: Soporte 'Jurassic Park' alquilado a cliente: Cliente Multiple []
+[2026-01-04T22:10:56.778245+01:00] VideoclubLogger.INFO: Soporte 'Gladiator' alquilado a cliente: Cliente Multiple []
+[2026-01-04T22:10:56.778278+01:00] VideoclubLogger.INFO: Soporte 'FIFA 23' alquilado a cliente: Cliente Multiple []
+[2026-01-04T22:10:56.778727+01:00] VideoclubLogger.INFO: Soporte 'Test' alquilado a cliente: Cliente Test []
+[2026-01-04T22:10:56.779080+01:00] VideoclubLogger.INFO: Cliente Test intentó devolver soporte inexistente (Nº 999) []
+[2026-01-04T22:10:56.779851+01:00] VideoclubLogger.INFO: Cliente Sin Alquileres tiene 0 soporte(s) alquilado(s) []
+[2026-01-04T22:10:56.780138+01:00] VideoclubLogger.INFO: No hay soportes alquilados actualmente. []
+[2026-01-04T22:10:56.780669+01:00] VideoclubLogger.INFO: Soporte 'Matrix' alquilado a cliente: Cliente Test []
+[2026-01-04T22:10:56.780952+01:00] VideoclubLogger.WARNING: Intento de alquilar soporte ya alquilado: Matrix por cliente Cliente Test []
+[2026-01-04T22:10:56.781360+01:00] VideoclubLogger.INFO: Soporte 'Película' alquilado a cliente: Cliente Test []
+[2026-01-04T22:10:56.781642+01:00] VideoclubLogger.INFO: Cliente Test devolvió el soporte: Película (Nº 100) []
+[2026-01-04T22:10:56.781681+01:00] VideoclubLogger.INFO: Soporte 'Película' alquilado a cliente: Cliente Test []
+[2026-01-04T22:14:12.444224+01:00] VideoclubLogger.INFO: Soporte 'Película 0' alquilado a cliente: Juan Pérez []
+[2026-01-04T22:14:12.445304+01:00] VideoclubLogger.INFO: Soporte 'Película 0' alquilado a cliente: María García []
+[2026-01-04T22:14:12.445584+01:00] VideoclubLogger.INFO: Soporte 'Película 1' alquilado a cliente: María García []
+[2026-01-04T22:14:12.445976+01:00] VideoclubLogger.INFO: Soporte 'Película 0' alquilado a cliente: Carlos López []
+[2026-01-04T22:14:12.446255+01:00] VideoclubLogger.INFO: Soporte 'Película 1' alquilado a cliente: Carlos López []
+[2026-01-04T22:14:12.446298+01:00] VideoclubLogger.INFO: Soporte 'Película 2' alquilado a cliente: Carlos López []
+[2026-01-04T22:14:12.446671+01:00] VideoclubLogger.INFO: Soporte 'Película 0' alquilado a cliente: Ana Rodríguez []
+[2026-01-04T22:14:12.446945+01:00] VideoclubLogger.INFO: Soporte 'Película 1' alquilado a cliente: Ana Rodríguez []
+[2026-01-04T22:14:12.446989+01:00] VideoclubLogger.INFO: Soporte 'Película 2' alquilado a cliente: Ana Rodríguez []
+[2026-01-04T22:14:12.447024+01:00] VideoclubLogger.INFO: Soporte 'Película 3' alquilado a cliente: Ana Rodríguez []
+[2026-01-04T22:14:12.447057+01:00] VideoclubLogger.INFO: Soporte 'Película 4' alquilado a cliente: Ana Rodríguez []
+[2026-01-04T22:14:12.447452+01:00] VideoclubLogger.INFO: Soporte 'Película 0' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:14:12.447809+01:00] VideoclubLogger.INFO: Soporte 'Película 1' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:14:12.447879+01:00] VideoclubLogger.INFO: Soporte 'Película 2' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:14:12.447945+01:00] VideoclubLogger.INFO: Soporte 'Película 3' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:14:12.447981+01:00] VideoclubLogger.INFO: Soporte 'Película 4' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:14:12.448010+01:00] VideoclubLogger.INFO: Soporte 'Película 5' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:14:12.448038+01:00] VideoclubLogger.INFO: Soporte 'Película 6' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:14:12.448065+01:00] VideoclubLogger.INFO: Soporte 'Película 7' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:14:12.448092+01:00] VideoclubLogger.INFO: Soporte 'Película 8' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:14:12.448120+01:00] VideoclubLogger.INFO: Soporte 'Película 9' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:14:12.448581+01:00] VideoclubLogger.INFO: Soporte 'Película 0' alquilado a cliente: Juan Pérez []
+[2026-01-04T22:14:12.448858+01:00] VideoclubLogger.WARNING: Cupo de alquiler superado para cliente Juan Pérez (máx: 1) []
+[2026-01-04T22:14:12.451426+01:00] VideoclubLogger.INFO: Soporte 'Película 0' alquilado a cliente: María García []
+[2026-01-04T22:14:12.451737+01:00] VideoclubLogger.INFO: Soporte 'Película 1' alquilado a cliente: María García []
+[2026-01-04T22:14:12.451777+01:00] VideoclubLogger.WARNING: Cupo de alquiler superado para cliente María García (máx: 2) []
+[2026-01-04T22:14:12.452195+01:00] VideoclubLogger.INFO: Soporte 'Película 0' alquilado a cliente: Carlos López []
+[2026-01-04T22:14:12.452494+01:00] VideoclubLogger.INFO: Soporte 'Película 1' alquilado a cliente: Carlos López []
+[2026-01-04T22:14:12.452533+01:00] VideoclubLogger.INFO: Soporte 'Película 2' alquilado a cliente: Carlos López []
+[2026-01-04T22:14:12.452565+01:00] VideoclubLogger.WARNING: Cupo de alquiler superado para cliente Carlos López (máx: 3) []
+[2026-01-04T22:14:12.452986+01:00] VideoclubLogger.INFO: Soporte 'Película 0' alquilado a cliente: Ana Rodríguez []
+[2026-01-04T22:14:12.453272+01:00] VideoclubLogger.INFO: Soporte 'Película 1' alquilado a cliente: Ana Rodríguez []
+[2026-01-04T22:14:12.453312+01:00] VideoclubLogger.INFO: Soporte 'Película 2' alquilado a cliente: Ana Rodríguez []
+[2026-01-04T22:14:12.453344+01:00] VideoclubLogger.INFO: Soporte 'Película 3' alquilado a cliente: Ana Rodríguez []
+[2026-01-04T22:14:12.453373+01:00] VideoclubLogger.INFO: Soporte 'Película 4' alquilado a cliente: Ana Rodríguez []
+[2026-01-04T22:14:12.453402+01:00] VideoclubLogger.WARNING: Cupo de alquiler superado para cliente Ana Rodríguez (máx: 5) []
+[2026-01-04T22:14:12.453884+01:00] VideoclubLogger.INFO: Soporte 'Película 0' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:14:12.454166+01:00] VideoclubLogger.INFO: Soporte 'Película 1' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:14:12.454205+01:00] VideoclubLogger.INFO: Soporte 'Película 2' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:14:12.454301+01:00] VideoclubLogger.INFO: Soporte 'Película 3' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:14:12.454348+01:00] VideoclubLogger.INFO: Soporte 'Película 4' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:14:12.454381+01:00] VideoclubLogger.INFO: Soporte 'Película 5' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:14:12.454409+01:00] VideoclubLogger.INFO: Soporte 'Película 6' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:14:12.454438+01:00] VideoclubLogger.INFO: Soporte 'Película 7' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:14:12.454466+01:00] VideoclubLogger.INFO: Soporte 'Película 8' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:14:12.454494+01:00] VideoclubLogger.INFO: Soporte 'Película 9' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:14:12.454522+01:00] VideoclubLogger.WARNING: Cupo de alquiler superado para cliente Pedro Sánchez (máx: 10) []
+[2026-01-04T22:14:12.455095+01:00] VideoclubLogger.INFO: Soporte 'El Padrino' alquilado a cliente: Cliente Test []
+[2026-01-04T22:14:12.455406+01:00] VideoclubLogger.WARNING: Intento de alquilar soporte ya alquilado: El Padrino por cliente Cliente Test []
+[2026-01-04T22:14:12.455961+01:00] VideoclubLogger.INFO: Soporte 'The Legend of Zelda' alquilado a cliente: Cliente Test []
+[2026-01-04T22:14:12.456236+01:00] VideoclubLogger.WARNING: Intento de alquilar soporte ya alquilado: The Legend of Zelda por cliente Cliente Test []
+[2026-01-04T22:14:12.456660+01:00] VideoclubLogger.INFO: Soporte 'Titanic' alquilado a cliente: Cliente Test []
+[2026-01-04T22:14:12.456931+01:00] VideoclubLogger.WARNING: Intento de alquilar soporte ya alquilado: Titanic por cliente Cliente Test []
+[2026-01-04T22:14:12.457367+01:00] VideoclubLogger.INFO: Soporte 'Interestelar' alquilado a cliente: Cliente Test []
+[2026-01-04T22:14:12.457651+01:00] VideoclubLogger.WARNING: Intento de alquilar soporte ya alquilado: Interestelar por cliente Cliente Test []
+[2026-01-04T22:14:12.458062+01:00] VideoclubLogger.INFO: Soporte 'Super Mario Odyssey' alquilado a cliente: Cliente Test []
+[2026-01-04T22:14:12.458354+01:00] VideoclubLogger.WARNING: Intento de alquilar soporte ya alquilado: Super Mario Odyssey por cliente Cliente Test []
+[2026-01-04T22:14:12.458886+01:00] VideoclubLogger.INFO: Soporte 'El Padrino' alquilado a cliente: Cliente 1 []
+[2026-01-04T22:14:12.459161+01:00] VideoclubLogger.INFO: Soporte 'El Padrino' alquilado a cliente: Cliente 2 []
+[2026-01-04T22:14:12.459880+01:00] VideoclubLogger.INFO: Soporte 'The Legend of Zelda' alquilado a cliente: Cliente 1 []
+[2026-01-04T22:14:12.460156+01:00] VideoclubLogger.INFO: Soporte 'The Legend of Zelda' alquilado a cliente: Cliente 2 []
+[2026-01-04T22:14:12.460822+01:00] VideoclubLogger.INFO: Soporte 'Titanic' alquilado a cliente: Cliente 1 []
+[2026-01-04T22:14:12.461097+01:00] VideoclubLogger.INFO: Soporte 'Titanic' alquilado a cliente: Cliente 2 []
+[2026-01-04T22:14:12.461789+01:00] VideoclubLogger.INFO: Soporte 'Interestelar' alquilado a cliente: Cliente 1 []
+[2026-01-04T22:14:12.462068+01:00] VideoclubLogger.INFO: Soporte 'Interestelar' alquilado a cliente: Cliente 2 []
+[2026-01-04T22:14:12.462830+01:00] VideoclubLogger.INFO: Soporte 'Super Mario Odyssey' alquilado a cliente: Cliente 1 []
+[2026-01-04T22:14:12.463103+01:00] VideoclubLogger.INFO: Soporte 'Super Mario Odyssey' alquilado a cliente: Cliente 2 []
+[2026-01-04T22:14:12.464066+01:00] VideoclubLogger.INFO: Soporte 'DVD 1' alquilado a cliente: Test Cliente []
+[2026-01-04T22:14:12.464344+01:00] VideoclubLogger.INFO: Soporte 'Juego 1' alquilado a cliente: Test Cliente []
+[2026-01-04T22:14:12.464385+01:00] VideoclubLogger.INFO: Soporte 'Cinta 1' alquilado a cliente: Test Cliente []
+[2026-01-04T22:14:12.464425+01:00] VideoclubLogger.INFO: Test Cliente devolvió el soporte: Juego 1 (Nº 2) []
+[2026-01-04T22:14:12.466523+01:00] VideoclubLogger.INFO: Soporte 'Pulp Fiction' alquilado a cliente: Cliente Multiple []
+[2026-01-04T22:14:12.466846+01:00] VideoclubLogger.INFO: Soporte 'God of War' alquilado a cliente: Cliente Multiple []
+[2026-01-04T22:14:12.466891+01:00] VideoclubLogger.INFO: Soporte 'Forrest Gump' alquilado a cliente: Cliente Multiple []
+[2026-01-04T22:14:12.467259+01:00] VideoclubLogger.INFO: Soporte 'Matrix' alquilado a cliente: Cliente Multiple []
+[2026-01-04T22:14:12.467529+01:00] VideoclubLogger.INFO: Soporte 'Cyberpunk 2077' alquilado a cliente: Cliente Multiple []
+[2026-01-04T22:14:12.467573+01:00] VideoclubLogger.INFO: Soporte 'Jurassic Park' alquilado a cliente: Cliente Multiple []
+[2026-01-04T22:14:12.467610+01:00] VideoclubLogger.INFO: Soporte 'Gladiator' alquilado a cliente: Cliente Multiple []
+[2026-01-04T22:14:12.467645+01:00] VideoclubLogger.INFO: Soporte 'FIFA 23' alquilado a cliente: Cliente Multiple []
+[2026-01-04T22:14:12.468056+01:00] VideoclubLogger.INFO: Soporte 'Test' alquilado a cliente: Cliente Test []
+[2026-01-04T22:14:12.468327+01:00] VideoclubLogger.INFO: Cliente Test intentó devolver soporte inexistente (Nº 999) []
+[2026-01-04T22:14:12.468994+01:00] VideoclubLogger.INFO: Cliente Sin Alquileres tiene 0 soporte(s) alquilado(s) []
+[2026-01-04T22:14:12.469255+01:00] VideoclubLogger.INFO: No hay soportes alquilados actualmente. []
+[2026-01-04T22:14:12.469621+01:00] VideoclubLogger.INFO: Soporte 'Película' alquilado a cliente: Cliente Test []
+[2026-01-04T22:14:12.469888+01:00] VideoclubLogger.INFO: Cliente Test devolvió el soporte: Película (Nº 100) []
+[2026-01-04T22:14:12.469929+01:00] VideoclubLogger.INFO: Soporte 'Película' alquilado a cliente: Cliente Test []
+[2026-01-04T22:20:58.560597+01:00] VideoclubLogger.INFO: Soporte 'Película 0' alquilado a cliente: Juan Pérez []
+[2026-01-04T22:20:58.562217+01:00] VideoclubLogger.INFO: Soporte 'Película 0' alquilado a cliente: María García []
+[2026-01-04T22:20:58.562750+01:00] VideoclubLogger.INFO: Soporte 'Película 1' alquilado a cliente: María García []
+[2026-01-04T22:20:58.563321+01:00] VideoclubLogger.INFO: Soporte 'Película 0' alquilado a cliente: Carlos López []
+[2026-01-04T22:20:58.563781+01:00] VideoclubLogger.INFO: Soporte 'Película 1' alquilado a cliente: Carlos López []
+[2026-01-04T22:20:58.563850+01:00] VideoclubLogger.INFO: Soporte 'Película 2' alquilado a cliente: Carlos López []
+[2026-01-04T22:20:58.564391+01:00] VideoclubLogger.INFO: Soporte 'Película 0' alquilado a cliente: Ana Rodríguez []
+[2026-01-04T22:20:58.564830+01:00] VideoclubLogger.INFO: Soporte 'Película 1' alquilado a cliente: Ana Rodríguez []
+[2026-01-04T22:20:58.564898+01:00] VideoclubLogger.INFO: Soporte 'Película 2' alquilado a cliente: Ana Rodríguez []
+[2026-01-04T22:20:58.564954+01:00] VideoclubLogger.INFO: Soporte 'Película 3' alquilado a cliente: Ana Rodríguez []
+[2026-01-04T22:20:58.565006+01:00] VideoclubLogger.INFO: Soporte 'Película 4' alquilado a cliente: Ana Rodríguez []
+[2026-01-04T22:20:58.565546+01:00] VideoclubLogger.INFO: Soporte 'Película 0' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:20:58.565975+01:00] VideoclubLogger.INFO: Soporte 'Película 1' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:20:58.566044+01:00] VideoclubLogger.INFO: Soporte 'Película 2' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:20:58.566101+01:00] VideoclubLogger.INFO: Soporte 'Película 3' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:20:58.566154+01:00] VideoclubLogger.INFO: Soporte 'Película 4' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:20:58.566205+01:00] VideoclubLogger.INFO: Soporte 'Película 5' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:20:58.566260+01:00] VideoclubLogger.INFO: Soporte 'Película 6' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:20:58.566369+01:00] VideoclubLogger.INFO: Soporte 'Película 7' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:20:58.566456+01:00] VideoclubLogger.INFO: Soporte 'Película 8' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:20:58.566538+01:00] VideoclubLogger.INFO: Soporte 'Película 9' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:20:58.567313+01:00] VideoclubLogger.INFO: Soporte 'Película 0' alquilado a cliente: Juan Pérez []
+[2026-01-04T22:20:58.567782+01:00] VideoclubLogger.WARNING: Cupo de alquiler superado para cliente Juan Pérez (máx: 1) []
+[2026-01-04T22:20:58.570536+01:00] VideoclubLogger.INFO: Soporte 'Película 0' alquilado a cliente: María García []
+[2026-01-04T22:20:58.570986+01:00] VideoclubLogger.INFO: Soporte 'Película 1' alquilado a cliente: María García []
+[2026-01-04T22:20:58.571051+01:00] VideoclubLogger.WARNING: Cupo de alquiler superado para cliente María García (máx: 2) []
+[2026-01-04T22:20:58.571617+01:00] VideoclubLogger.INFO: Soporte 'Película 0' alquilado a cliente: Carlos López []
+[2026-01-04T22:20:58.572044+01:00] VideoclubLogger.INFO: Soporte 'Película 1' alquilado a cliente: Carlos López []
+[2026-01-04T22:20:58.572108+01:00] VideoclubLogger.INFO: Soporte 'Película 2' alquilado a cliente: Carlos López []
+[2026-01-04T22:20:58.572159+01:00] VideoclubLogger.WARNING: Cupo de alquiler superado para cliente Carlos López (máx: 3) []
+[2026-01-04T22:20:58.572761+01:00] VideoclubLogger.INFO: Soporte 'Película 0' alquilado a cliente: Ana Rodríguez []
+[2026-01-04T22:20:58.573190+01:00] VideoclubLogger.INFO: Soporte 'Película 1' alquilado a cliente: Ana Rodríguez []
+[2026-01-04T22:20:58.573253+01:00] VideoclubLogger.INFO: Soporte 'Película 2' alquilado a cliente: Ana Rodríguez []
+[2026-01-04T22:20:58.573304+01:00] VideoclubLogger.INFO: Soporte 'Película 3' alquilado a cliente: Ana Rodríguez []
+[2026-01-04T22:20:58.573351+01:00] VideoclubLogger.INFO: Soporte 'Película 4' alquilado a cliente: Ana Rodríguez []
+[2026-01-04T22:20:58.573398+01:00] VideoclubLogger.WARNING: Cupo de alquiler superado para cliente Ana Rodríguez (máx: 5) []
+[2026-01-04T22:20:58.573997+01:00] VideoclubLogger.INFO: Soporte 'Película 0' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:20:58.574428+01:00] VideoclubLogger.INFO: Soporte 'Película 1' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:20:58.574488+01:00] VideoclubLogger.INFO: Soporte 'Película 2' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:20:58.574533+01:00] VideoclubLogger.INFO: Soporte 'Película 3' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:20:58.574573+01:00] VideoclubLogger.INFO: Soporte 'Película 4' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:20:58.574612+01:00] VideoclubLogger.INFO: Soporte 'Película 5' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:20:58.574650+01:00] VideoclubLogger.INFO: Soporte 'Película 6' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:20:58.574688+01:00] VideoclubLogger.INFO: Soporte 'Película 7' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:20:58.574725+01:00] VideoclubLogger.INFO: Soporte 'Película 8' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:20:58.574763+01:00] VideoclubLogger.INFO: Soporte 'Película 9' alquilado a cliente: Pedro Sánchez []
+[2026-01-04T22:20:58.574803+01:00] VideoclubLogger.WARNING: Cupo de alquiler superado para cliente Pedro Sánchez (máx: 10) []
+[2026-01-04T22:20:58.575493+01:00] VideoclubLogger.INFO: Soporte 'El Padrino' alquilado a cliente: Cliente Test []
+[2026-01-04T22:20:58.575930+01:00] VideoclubLogger.WARNING: Intento de alquilar soporte ya alquilado: El Padrino por cliente Cliente Test []
+[2026-01-04T22:20:58.576547+01:00] VideoclubLogger.INFO: Soporte 'The Legend of Zelda' alquilado a cliente: Cliente Test []
+[2026-01-04T22:20:58.576966+01:00] VideoclubLogger.WARNING: Intento de alquilar soporte ya alquilado: The Legend of Zelda por cliente Cliente Test []
+[2026-01-04T22:20:58.577485+01:00] VideoclubLogger.INFO: Soporte 'Titanic' alquilado a cliente: Cliente Test []
+[2026-01-04T22:20:58.577915+01:00] VideoclubLogger.WARNING: Intento de alquilar soporte ya alquilado: Titanic por cliente Cliente Test []
+[2026-01-04T22:20:58.578565+01:00] VideoclubLogger.INFO: Soporte 'Interestelar' alquilado a cliente: Cliente Test []
+[2026-01-04T22:20:58.578986+01:00] VideoclubLogger.WARNING: Intento de alquilar soporte ya alquilado: Interestelar por cliente Cliente Test []
+[2026-01-04T22:20:58.579506+01:00] VideoclubLogger.INFO: Soporte 'Super Mario Odyssey' alquilado a cliente: Cliente Test []
+[2026-01-04T22:20:58.579921+01:00] VideoclubLogger.WARNING: Intento de alquilar soporte ya alquilado: Super Mario Odyssey por cliente Cliente Test []
+[2026-01-04T22:20:58.580572+01:00] VideoclubLogger.INFO: Soporte 'El Padrino' alquilado a cliente: Cliente 1 []
+[2026-01-04T22:20:58.580985+01:00] VideoclubLogger.INFO: Soporte 'El Padrino' alquilado a cliente: Cliente 2 []
+[2026-01-04T22:20:58.581907+01:00] VideoclubLogger.INFO: Soporte 'The Legend of Zelda' alquilado a cliente: Cliente 1 []
+[2026-01-04T22:20:58.582447+01:00] VideoclubLogger.INFO: Soporte 'The Legend of Zelda' alquilado a cliente: Cliente 2 []
+[2026-01-04T22:20:58.583408+01:00] VideoclubLogger.INFO: Soporte 'Titanic' alquilado a cliente: Cliente 1 []
+[2026-01-04T22:20:58.583831+01:00] VideoclubLogger.INFO: Soporte 'Titanic' alquilado a cliente: Cliente 2 []
+[2026-01-04T22:20:58.584793+01:00] VideoclubLogger.INFO: Soporte 'Interestelar' alquilado a cliente: Cliente 1 []
+[2026-01-04T22:20:58.585210+01:00] VideoclubLogger.INFO: Soporte 'Interestelar' alquilado a cliente: Cliente 2 []
+[2026-01-04T22:20:58.586129+01:00] VideoclubLogger.INFO: Soporte 'Super Mario Odyssey' alquilado a cliente: Cliente 1 []
+[2026-01-04T22:20:58.586554+01:00] VideoclubLogger.INFO: Soporte 'Super Mario Odyssey' alquilado a cliente: Cliente 2 []
+[2026-01-04T22:20:58.587586+01:00] VideoclubLogger.INFO: Soporte 'DVD 1' alquilado a cliente: Test Cliente []
+[2026-01-04T22:20:58.587998+01:00] VideoclubLogger.INFO: Soporte 'Juego 1' alquilado a cliente: Test Cliente []
+[2026-01-04T22:20:58.588060+01:00] VideoclubLogger.INFO: Soporte 'Cinta 1' alquilado a cliente: Test Cliente []
+[2026-01-04T22:20:58.588118+01:00] VideoclubLogger.INFO: Test Cliente devolvió el soporte: Juego 1 (Nº 2) []
+[2026-01-04T22:20:58.591138+01:00] VideoclubLogger.INFO: Soporte 'Pulp Fiction' alquilado a cliente: Cliente Multiple []
+[2026-01-04T22:20:58.591569+01:00] VideoclubLogger.INFO: Soporte 'God of War' alquilado a cliente: Cliente Multiple []
+[2026-01-04T22:20:58.591639+01:00] VideoclubLogger.INFO: Soporte 'Forrest Gump' alquilado a cliente: Cliente Multiple []
+[2026-01-04T22:20:58.592196+01:00] VideoclubLogger.INFO: Soporte 'Matrix' alquilado a cliente: Cliente Multiple []
+[2026-01-04T22:20:58.592620+01:00] VideoclubLogger.INFO: Soporte 'Cyberpunk 2077' alquilado a cliente: Cliente Multiple []
+[2026-01-04T22:20:58.592689+01:00] VideoclubLogger.INFO: Soporte 'Jurassic Park' alquilado a cliente: Cliente Multiple []
+[2026-01-04T22:20:58.592747+01:00] VideoclubLogger.INFO: Soporte 'Gladiator' alquilado a cliente: Cliente Multiple []
+[2026-01-04T22:20:58.592803+01:00] VideoclubLogger.INFO: Soporte 'FIFA 23' alquilado a cliente: Cliente Multiple []
+[2026-01-04T22:20:58.593423+01:00] VideoclubLogger.INFO: Soporte 'Test' alquilado a cliente: Cliente Test []
+[2026-01-04T22:20:58.593846+01:00] VideoclubLogger.INFO: Cliente Test intentó devolver soporte inexistente (Nº 999) []
+[2026-01-04T22:20:58.594831+01:00] VideoclubLogger.INFO: Cliente Sin Alquileres tiene 0 soporte(s) alquilado(s) []
+[2026-01-04T22:20:58.595256+01:00] VideoclubLogger.INFO: No hay soportes alquilados actualmente. []
+[2026-01-04T22:20:58.595824+01:00] VideoclubLogger.INFO: Soporte 'Película' alquilado a cliente: Cliente Test []
+[2026-01-04T22:20:58.596269+01:00] VideoclubLogger.INFO: Cliente Test devolvió el soporte: Película (Nº 100) []
+[2026-01-04T22:20:58.596334+01:00] VideoclubLogger.INFO: Soporte 'Película' alquilado a cliente: Cliente Test []
+[2026-01-04T22:20:58.597174+01:00] VideoclubLogger.INFO: Soporte 'DVD 1' alquilado a cliente: Test []
+[2026-01-04T22:20:58.597582+01:00] VideoclubLogger.INFO: Soporte 'Juego 1' alquilado a cliente: Test []
+[2026-01-04T22:30:55.705688+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:30:55.706196+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":1,"nombre":"María García","numero_asignado":100}
+[2026-01-04T22:30:55.709802+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":0,"titulo":"Interestelar","tipo":"App\\Dvd"}
+[2026-01-04T22:30:55.710543+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":1,"titulo":"The Legend of Zelda","tipo":"App\\Juego"}
+[2026-01-04T22:30:55.710908+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":2,"titulo":"Titanic","tipo":"App\\CintaVideo"}
+[2026-01-04T22:30:55.711404+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:30:55.711696+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":1,"nombre":"María García","numero_asignado":2}
+[2026-01-04T22:30:55.711748+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":2,"nombre":"Carlos López","numero_asignado":3}
+[2026-01-04T22:30:55.712233+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:30:55.712534+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":0,"titulo":"Interestelar","tipo":"App\\Dvd"}
+[2026-01-04T22:30:55.712579+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":1,"titulo":"The Legend of Zelda","tipo":"App\\Juego"}
+[2026-01-04T22:30:55.712613+01:00] VideoclubLogger.WARNING: Cliente no encontrado al intentar alquilar {"num_socio":1,"num_producto":0}
+[2026-01-04T22:30:55.713224+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":0,"titulo":"Interestelar","tipo":"App\\Dvd"}
+[2026-01-04T22:30:55.713498+01:00] VideoclubLogger.WARNING: Cliente no encontrado al intentar alquilar {"num_socio":999,"num_producto":0}
+[2026-01-04T22:30:55.714358+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:30:55.714637+01:00] VideoclubLogger.WARNING: Cliente no encontrado al intentar alquilar {"num_socio":1,"num_producto":999}
+[2026-01-04T22:30:55.715148+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:30:55.715435+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":0,"titulo":"Interestelar","tipo":"App\\Dvd"}
+[2026-01-04T22:30:55.715478+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":1,"titulo":"The Legend of Zelda","tipo":"App\\Juego"}
+[2026-01-04T22:30:55.715513+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":2,"titulo":"Titanic","tipo":"App\\CintaVideo"}
+[2026-01-04T22:30:55.715545+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":3,"titulo":"Matrix","tipo":"App\\Dvd"}
+[2026-01-04T22:30:55.715577+01:00] VideoclubLogger.WARNING: Cliente no encontrado en alquiler múltiple {"num_socio":1}
+[2026-01-04T22:30:55.716415+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:30:55.716826+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":0,"titulo":"Interestelar","tipo":"App\\Dvd"}
+[2026-01-04T22:30:55.716869+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":1,"titulo":"The Legend of Zelda","tipo":"App\\Juego"}
+[2026-01-04T22:30:55.716900+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":2,"titulo":"Titanic","tipo":"App\\CintaVideo"}
+[2026-01-04T22:30:55.716928+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":3,"titulo":"Matrix","tipo":"App\\Dvd"}
+[2026-01-04T22:30:55.716954+01:00] VideoclubLogger.WARNING: Cliente no encontrado en alquiler múltiple {"num_socio":1}
+[2026-01-04T22:30:55.717462+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:30:55.717748+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":0,"titulo":"Pelicula 1","tipo":"App\\Dvd"}
+[2026-01-04T22:30:55.717791+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":1,"titulo":"Pelicula 2","tipo":"App\\Dvd"}
+[2026-01-04T22:30:55.717824+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":2,"titulo":"Pelicula 3","tipo":"App\\Dvd"}
+[2026-01-04T22:30:55.717857+01:00] VideoclubLogger.WARNING: Cliente no encontrado en alquiler múltiple {"num_socio":1}
+[2026-01-04T22:30:55.718604+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:30:55.718883+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":0,"titulo":"Pelicula 1","tipo":"App\\Dvd"}
+[2026-01-04T22:30:55.718925+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":1,"titulo":"Pelicula 2","tipo":"App\\Dvd"}
+[2026-01-04T22:30:55.718960+01:00] VideoclubLogger.WARNING: Cliente no encontrado al intentar alquilar {"num_socio":1,"num_producto":0}
+[2026-01-04T22:30:55.719005+01:00] VideoclubLogger.WARNING: Cliente no encontrado en alquiler múltiple {"num_socio":1}
+[2026-01-04T22:30:55.719475+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:30:55.719752+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":0,"titulo":"Interestelar","tipo":"App\\Dvd"}
+[2026-01-04T22:30:55.719828+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":1,"titulo":"The Legend of Zelda","tipo":"App\\Juego"}
+[2026-01-04T22:30:55.719867+01:00] VideoclubLogger.WARNING: Cliente no encontrado al intentar alquilar {"num_socio":1,"num_producto":0}
+[2026-01-04T22:30:55.719907+01:00] VideoclubLogger.WARNING: Cliente no encontrado al intentar alquilar {"num_socio":1,"num_producto":1}
+[2026-01-04T22:30:55.720550+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:30:55.720835+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":0,"titulo":"Interestelar","tipo":"App\\Dvd"}
+[2026-01-04T22:30:55.720878+01:00] VideoclubLogger.WARNING: Cliente no encontrado al intentar alquilar {"num_socio":1,"num_producto":0}
+[2026-01-04T22:30:55.721529+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:30:55.721854+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":0,"titulo":"Pelicula 1","tipo":"App\\Dvd"}
+[2026-01-04T22:30:55.721895+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":1,"titulo":"Pelicula 2","tipo":"App\\Dvd"}
+[2026-01-04T22:30:55.721925+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":2,"titulo":"Pelicula 3","tipo":"App\\Dvd"}
+[2026-01-04T22:30:55.721954+01:00] VideoclubLogger.WARNING: Cliente no encontrado en alquiler múltiple {"num_socio":1}
+[2026-01-04T22:30:55.722390+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:30:55.722692+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":0,"titulo":"Pelicula 1","tipo":"App\\Dvd"}
+[2026-01-04T22:30:55.722734+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":1,"titulo":"Pelicula 2","tipo":"App\\Dvd"}
+[2026-01-04T22:30:55.722768+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":2,"titulo":"Pelicula 3","tipo":"App\\Dvd"}
+[2026-01-04T22:30:55.722799+01:00] VideoclubLogger.WARNING: Cliente no encontrado en alquiler múltiple {"num_socio":1}
+[2026-01-04T22:30:55.723277+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:30:55.723553+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":0,"titulo":"Pelicula 1","tipo":"App\\Dvd"}
+[2026-01-04T22:30:55.723595+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":1,"titulo":"Pelicula 2","tipo":"App\\Dvd"}
+[2026-01-04T22:30:55.723629+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":2,"titulo":"Pelicula 3","tipo":"App\\Dvd"}
+[2026-01-04T22:30:55.723661+01:00] VideoclubLogger.WARNING: Cliente no encontrado en alquiler múltiple {"num_socio":1}
+[2026-01-04T22:30:55.724153+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:30:55.724445+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":1,"nombre":"María García","numero_asignado":2}
+[2026-01-04T22:30:55.724488+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":0,"titulo":"Pelicula 1","tipo":"App\\Dvd"}
+[2026-01-04T22:30:55.724522+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":1,"titulo":"Pelicula 2","tipo":"App\\Dvd"}
+[2026-01-04T22:30:55.724555+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":2,"titulo":"Pelicula 3","tipo":"App\\Dvd"}
+[2026-01-04T22:30:55.724591+01:00] VideoclubLogger.WARNING: Cliente no encontrado al intentar alquilar {"num_socio":1,"num_producto":0}
+[2026-01-04T22:30:55.724633+01:00] VideoclubLogger.WARNING: Cliente no encontrado al intentar alquilar {"num_socio":1,"num_producto":1}
+[2026-01-04T22:30:55.724667+01:00] VideoclubLogger.WARNING: Cliente no encontrado al intentar alquilar {"num_socio":2,"num_producto":2}
+[2026-01-04T22:30:55.725620+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:30:55.726200+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":0,"titulo":"Interestelar","tipo":"App\\Dvd"}
+[2026-01-04T22:30:55.727645+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:30:55.728039+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":1,"nombre":"María García","numero_asignado":2}
+[2026-01-04T22:30:55.728085+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":0,"titulo":"Interestelar","tipo":"App\\Dvd"}
+[2026-01-04T22:30:55.728119+01:00] VideoclubLogger.WARNING: Cliente no encontrado al intentar alquilar {"num_socio":1,"num_producto":0}
+[2026-01-04T22:30:55.728164+01:00] VideoclubLogger.WARNING: Cliente no encontrado al intentar alquilar {"num_socio":2,"num_producto":0}
+[2026-01-04T22:30:55.728886+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:30:55.729178+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":0,"titulo":"Pelicula 1","tipo":"App\\Dvd"}
+[2026-01-04T22:30:55.729220+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":1,"titulo":"Pelicula 2","tipo":"App\\Dvd"}
+[2026-01-04T22:30:55.729254+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":2,"titulo":"Pelicula 3","tipo":"App\\Dvd"}
+[2026-01-04T22:30:55.729287+01:00] VideoclubLogger.WARNING: Cliente no encontrado al intentar alquilar {"num_socio":1,"num_producto":0}
+[2026-01-04T22:30:55.729324+01:00] VideoclubLogger.WARNING: Cliente no encontrado al intentar alquilar {"num_socio":1,"num_producto":1}
+[2026-01-04T22:30:55.729358+01:00] VideoclubLogger.WARNING: Cliente no encontrado al intentar alquilar {"num_socio":1,"num_producto":2}
+[2026-01-04T22:30:55.730004+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:30:55.730287+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":0,"titulo":"Pelicula 1","tipo":"App\\Dvd"}
+[2026-01-04T22:30:55.730328+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":1,"titulo":"Pelicula 2","tipo":"App\\Dvd"}
+[2026-01-04T22:30:55.730358+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":2,"titulo":"Pelicula 3","tipo":"App\\Dvd"}
+[2026-01-04T22:30:55.730385+01:00] VideoclubLogger.WARNING: Cliente no encontrado al intentar alquilar {"num_socio":1,"num_producto":0}
+[2026-01-04T22:30:55.730419+01:00] VideoclubLogger.WARNING: Cliente no encontrado en alquiler múltiple {"num_socio":1}
+[2026-01-04T22:34:26.473336+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:34:26.473983+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":1,"nombre":"María García","numero_asignado":100}
+[2026-01-04T22:34:26.479036+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":0,"titulo":"Interestelar","tipo":"App\\Dvd"}
+[2026-01-04T22:34:26.480028+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":1,"titulo":"The Legend of Zelda","tipo":"App\\Juego"}
+[2026-01-04T22:34:26.480572+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":2,"titulo":"Titanic","tipo":"App\\CintaVideo"}
+[2026-01-04T22:34:26.481943+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:34:26.482430+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":1,"nombre":"María García","numero_asignado":2}
+[2026-01-04T22:34:26.482515+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":2,"nombre":"Carlos López","numero_asignado":3}
+[2026-01-04T22:34:26.483219+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:34:26.484023+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":0,"titulo":"Interestelar","tipo":"App\\Dvd"}
+[2026-01-04T22:34:26.484127+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":1,"titulo":"The Legend of Zelda","tipo":"App\\Juego"}
+[2026-01-04T22:34:26.484215+01:00] VideoclubLogger.WARNING: Cliente no encontrado al intentar alquilar {"num_socio":1,"num_producto":0}
+[2026-01-04T22:34:26.485040+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":0,"titulo":"Interestelar","tipo":"App\\Dvd"}
+[2026-01-04T22:34:26.485517+01:00] VideoclubLogger.WARNING: Cliente no encontrado al intentar alquilar {"num_socio":999,"num_producto":0}
+[2026-01-04T22:34:26.486752+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:34:26.487184+01:00] VideoclubLogger.WARNING: Cliente no encontrado al intentar alquilar {"num_socio":1,"num_producto":999}
+[2026-01-04T22:34:26.487898+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:34:26.488356+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":0,"titulo":"Pelicula 1","tipo":"App\\Dvd"}
+[2026-01-04T22:34:26.488424+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":1,"titulo":"Pelicula 2","tipo":"App\\Dvd"}
+[2026-01-04T22:34:26.488481+01:00] VideoclubLogger.WARNING: Cliente no encontrado en alquiler múltiple {"num_socio":1}
+[2026-01-04T22:34:26.489749+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:34:26.490199+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":0,"titulo":"Pelicula 1","tipo":"App\\Dvd"}
+[2026-01-04T22:34:26.490267+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":1,"titulo":"Pelicula 2","tipo":"App\\Dvd"}
+[2026-01-04T22:34:26.490321+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":2,"titulo":"Pelicula 3","tipo":"App\\Dvd"}
+[2026-01-04T22:34:26.490371+01:00] VideoclubLogger.WARNING: Cliente no encontrado en alquiler múltiple {"num_socio":1}
+[2026-01-04T22:34:26.491123+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:34:26.491570+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":0,"titulo":"Interestelar","tipo":"App\\Dvd"}
+[2026-01-04T22:34:26.491638+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":1,"titulo":"The Legend of Zelda","tipo":"App\\Juego"}
+[2026-01-04T22:34:26.491693+01:00] VideoclubLogger.WARNING: Cliente no encontrado al intentar alquilar {"num_socio":1,"num_producto":0}
+[2026-01-04T22:34:26.491753+01:00] VideoclubLogger.WARNING: Cliente no encontrado al intentar alquilar {"num_socio":1,"num_producto":1}
+[2026-01-04T22:34:26.492470+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:34:26.492925+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":1,"nombre":"María García","numero_asignado":2}
+[2026-01-04T22:34:26.492994+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":0,"titulo":"Pelicula 1","tipo":"App\\Dvd"}
+[2026-01-04T22:34:26.493049+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":1,"titulo":"Pelicula 2","tipo":"App\\Dvd"}
+[2026-01-04T22:34:26.493100+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":2,"titulo":"Pelicula 3","tipo":"App\\Dvd"}
+[2026-01-04T22:34:26.493157+01:00] VideoclubLogger.WARNING: Cliente no encontrado al intentar alquilar {"num_socio":1,"num_producto":0}
+[2026-01-04T22:34:26.493220+01:00] VideoclubLogger.WARNING: Cliente no encontrado al intentar alquilar {"num_socio":1,"num_producto":1}
+[2026-01-04T22:34:26.493275+01:00] VideoclubLogger.WARNING: Cliente no encontrado al intentar alquilar {"num_socio":2,"num_producto":2}
+[2026-01-04T22:34:26.493956+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:34:26.494390+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":0,"titulo":"Interestelar","tipo":"App\\Dvd"}
+[2026-01-04T22:34:26.495089+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:34:26.495538+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":1,"nombre":"María García","numero_asignado":2}
+[2026-01-04T22:34:26.495604+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":0,"titulo":"Interestelar","tipo":"App\\Dvd"}
+[2026-01-04T22:34:26.495653+01:00] VideoclubLogger.WARNING: Cliente no encontrado al intentar alquilar {"num_socio":1,"num_producto":0}
+[2026-01-04T22:34:26.495763+01:00] VideoclubLogger.WARNING: Cliente no encontrado al intentar alquilar {"num_socio":2,"num_producto":0}
+[2026-01-04T22:34:26.496474+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:34:26.496909+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":0,"titulo":"Pelicula 1","tipo":"App\\Dvd"}
+[2026-01-04T22:34:26.496978+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":1,"titulo":"Pelicula 2","tipo":"App\\Dvd"}
+[2026-01-04T22:34:26.497032+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":2,"titulo":"Pelicula 3","tipo":"App\\Dvd"}
+[2026-01-04T22:34:26.497083+01:00] VideoclubLogger.WARNING: Cliente no encontrado al intentar alquilar {"num_socio":1,"num_producto":0}
+[2026-01-04T22:34:26.497147+01:00] VideoclubLogger.WARNING: Cliente no encontrado al intentar alquilar {"num_socio":1,"num_producto":1}
+[2026-01-04T22:34:26.497202+01:00] VideoclubLogger.WARNING: Cliente no encontrado al intentar alquilar {"num_socio":1,"num_producto":2}
+[2026-01-04T22:38:32.246682+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:38:32.248623+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":0,"titulo":"Interestelar","tipo":"App\\Dvd"}
+[2026-01-04T22:38:32.249204+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":1,"titulo":"Zelda","tipo":"App\\Juego"}
+[2026-01-04T22:38:32.249550+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":2,"titulo":"Titanic","tipo":"App\\CintaVideo"}
+[2026-01-04T22:38:32.250029+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:38:32.250304+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":0,"titulo":"Pelicula","tipo":"App\\Dvd"}
+[2026-01-04T22:38:32.250348+01:00] VideoclubLogger.WARNING: Cliente no encontrado al intentar alquilar {"num_socio":1,"num_producto":0}
+[2026-01-04T22:38:32.254019+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":0,"titulo":"Pelicula","tipo":"App\\Dvd"}
+[2026-01-04T22:38:32.254370+01:00] VideoclubLogger.WARNING: Cliente no encontrado al intentar alquilar {"num_socio":999,"num_producto":0}
+[2026-01-04T22:38:32.254899+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:38:32.255168+01:00] VideoclubLogger.WARNING: Cliente no encontrado al intentar alquilar {"num_socio":1,"num_producto":999}
+[2026-01-04T22:38:32.255642+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:38:32.255938+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":0,"titulo":"Pelicula 1","tipo":"App\\Dvd"}
+[2026-01-04T22:38:32.255979+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":1,"titulo":"Pelicula 2","tipo":"App\\Dvd"}
+[2026-01-04T22:38:32.256013+01:00] VideoclubLogger.WARNING: Cliente no encontrado en alquiler múltiple {"num_socio":1}
+[2026-01-04T22:38:32.256527+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:38:32.256795+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":0,"titulo":"Pelicula","tipo":"App\\Dvd"}
+[2026-01-04T22:38:32.256837+01:00] VideoclubLogger.WARNING: Cliente no encontrado al intentar alquilar {"num_socio":1,"num_producto":0}
+[2026-01-04T22:38:32.257329+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:38:32.257708+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":0,"titulo":"Pelicula 1","tipo":"App\\Dvd"}
+[2026-01-04T22:38:32.257748+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":1,"titulo":"Pelicula 2","tipo":"App\\Dvd"}
+[2026-01-04T22:38:32.257777+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":2,"titulo":"Pelicula 3","tipo":"App\\Dvd"}
+[2026-01-04T22:38:32.257804+01:00] VideoclubLogger.WARNING: Cliente no encontrado en alquiler múltiple {"num_socio":1}
+[2026-01-04T22:38:32.258331+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:38:32.258651+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":0,"titulo":"Pelicula","tipo":"App\\Dvd"}
+[2026-01-04T22:38:32.259286+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:38:32.259577+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":1,"nombre":"María García","numero_asignado":2}
+[2026-01-04T22:38:32.261675+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:38:32.261967+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":1,"nombre":"María García","numero_asignado":2}
+[2026-01-04T22:38:32.262010+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":0,"titulo":"Pelicula","tipo":"App\\Dvd"}
+[2026-01-04T22:38:32.262044+01:00] VideoclubLogger.WARNING: Cliente no encontrado al intentar alquilar {"num_socio":1,"num_producto":0}
+[2026-01-04T22:38:32.262519+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:38:32.262784+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":0,"titulo":"Pelicula 1","tipo":"App\\Dvd"}
+[2026-01-04T22:38:32.262826+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":1,"titulo":"Pelicula 2","tipo":"App\\Dvd"}
+[2026-01-04T22:38:32.262859+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":2,"titulo":"Pelicula 3","tipo":"App\\Dvd"}
+[2026-01-04T22:38:32.262891+01:00] VideoclubLogger.WARNING: Cliente no encontrado al intentar alquilar {"num_socio":1,"num_producto":0}
+[2026-01-04T22:38:32.263363+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":0,"nombre":"Juan Pérez","numero_asignado":1}
+[2026-01-04T22:38:32.263642+01:00] VideoclubLogger.INFO: Incluido socio {"num_socio":1,"nombre":"María García","numero_asignado":2}
+[2026-01-04T22:38:32.263685+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":0,"titulo":"Pelicula 1","tipo":"App\\Dvd"}
+[2026-01-04T22:38:32.263718+01:00] VideoclubLogger.INFO: Incluido soporte {"num_soporte":1,"titulo":"Pelicula 2","tipo":"App\\Dvd"}
+[2026-01-04T22:38:32.263749+01:00] VideoclubLogger.WARNING: Cliente no encontrado al intentar alquilar {"num_socio":1,"num_producto":0}

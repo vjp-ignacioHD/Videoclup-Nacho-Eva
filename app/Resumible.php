@@ -1,9 +1,9 @@
 <?php
 
-namespace Dwes\ProyectoVideoclub;
+namespace App;
 
 interface Resumible {
-    public function muestraResumen();
+    public function muestraResumen() : string;
 }
 
 ?>

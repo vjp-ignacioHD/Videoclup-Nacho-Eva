@@ -1,9 +1,16 @@
 <?php
 
-namespace Dwes\ProyectoVideoclub;
+namespace App;
+
 
 abstract class Soporte implements Resumible
 {
+    
+    // Obtiene la puntuación de Metacritic para este soporte.
+    abstract public function getPuntuacion(): ?float;
+
+    // URL de Metacritic para este soporte.
+    public $metacritic = "";
 
     // Constante 
     private static $IVA = 0.21;
@@ -51,5 +58,5 @@ abstract class Soporte implements Resumible
     }
 
     // Este método debe ser implementado por cada clase hija
-    abstract public function muestraResumen();
+    abstract public function muestraResumen() : string;
 }

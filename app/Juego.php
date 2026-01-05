@@ -1,14 +1,11 @@
 <?php
-
-namespace Dwes\ProyectoVideoclub;
+namespace App;
 
 class Juego extends Soporte {
-    // Atributos
     public $consola;
     private $minNumJugadores;
     private $maxNumJugadores;
 
-    // Constructor
     public function __construct($titulo, $numero, $precio, $consola, $minNumJugadores, $maxNumJugadores) {
         parent::__construct($titulo, $numero, $precio);
         $this->consola = $consola;
@@ -16,34 +13,62 @@ class Juego extends Soporte {
         $this->maxNumJugadores = $maxNumJugadores;
     }
 
-    // Métodos
-    // Metodo para mostrar los jugadores posibles
-    public function muestraJugadoresPosibles() {
+    public function muestraJugadoresPosibles(): string
+    {
+        $mensaje = "";
         if ($this->minNumJugadores == $this->maxNumJugadores) {
             if ($this->minNumJugadores == 1) {
-                echo "Para un jugador";
+                $mensaje = "Para un jugador";
             } else {
-                echo "Para " . $this->minNumJugadores . " jugadores";
+                $mensaje = "Para " . $this->minNumJugadores . " jugadores";
             }
         } else {
-            echo "De " . $this->minNumJugadores . " a " . $this->maxNumJugadores . " jugadores";
+            $mensaje = "De " . $this->minNumJugadores . " a " . $this->maxNumJugadores . " jugadores";
+        }
+        
+        echo $mensaje;
+        return $mensaje;
+    }
+
+    public function muestraResumen(): string
+    {
+        $resumen = "Título: " . htmlspecialchars($this->titulo) . "<br>";
+        $resumen .= "Número: " . $this->numero . "<br>";
+        $resumen .= "Precio: " . number_format($this->getPrecio(), 2) . "€<br>";
+        $resumen .= "<strong>Consola:</strong> " . htmlspecialchars($this->consola) . "<br>";
+        $resumen .= "<strong>Jugadores posibles:</strong> ";
+        
+        ob_start();
+        $this->muestraJugadoresPosibles();
+        $jugadores = ob_get_clean();
+        $resumen .= $jugadores . "<br>";
+        
+        echo $resumen;
+        return $resumen;
+    }
+
+    public function getPuntuacion(): ?float
+    {
+        if (empty($this->metacritic)) {
+            return null;
+        }
+
+        try {
+            $html = file_get_contents($this->metacritic);
+            if ($html === false) {
+                return null;
+            }
+
+            preg_match('/<div class="metascore_w large game[^"]*">(\d+)<\/div>/', $html, $matches);
+
+            if (isset($matches[1])) {
+                return (float) $matches[1];
+            }
+
+            return null;
+        } catch (\Exception $e) {
+            return null;
         }
     }
-
-    // Metodo para mostrar el resumen
-    public function muestraResumen(): void
-    {
-        // Mostramos los datos heredados manualmente
-        echo "Título: " . htmlspecialchars($this->titulo) . "<br>";
-        echo "Número: " . $this->numero . "<br>";
-        echo "Precio: " . number_format($this->getPrecio(), 2) . "€<br>";
-        
-        // Datos específicos del juego
-        echo "<strong>Consola:</strong> " . htmlspecialchars($this->consola) . "<br>";
-        echo "<strong>Jugadores posibles:</strong> ";
-        $this->muestraJugadoresPosibles();
-        echo "<br>";
-    }
 }
-
 ?>
